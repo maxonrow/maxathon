@@ -1,6 +1,6 @@
 import { nodeProvider } from './env';
 import { mxw, auth, utils } from 'mxw-sdk-js/dist/index';
-import { sha256, toUtf8Bytes } from 'mxw-sdk-js/dist/utils'
+import { computeAddress, sha256, toUtf8Bytes } from 'mxw-sdk-js/dist/utils'
 import { sortObject } from 'mxw-sdk-js/dist/utils/misc';
 
 let silentRpc = nodeProvider.trace.silentRpc;
@@ -8,6 +8,7 @@ let providerConnection: mxw.providers.Provider;
 let provider: mxw.Wallet;
 let issuer: mxw.Wallet;
 let middleware: mxw.Wallet;
+let kycTransactionPromise: Promise<mxw.KycTransaction>;
 
 /**
   * KYC initialization
@@ -34,16 +35,12 @@ providerConnection = new mxw.providers.JsonRpcProvider(
   });
 
 provider = mxw.Wallet.fromMnemonic(nodeProvider.kyc.provider).connect(providerConnection);
-console.log('provider', provider);
 
 // mxw1ngx32epz5v5gyunepkarfh4lt0g6mqr79aq3ex
 issuer = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer);
-console.log('issuer', issuer);
 
 // mxw1mklypleqjhemrlt6z625rzqa0jl6namdmmqnx4
 middleware = mxw.Wallet.fromMnemonic(nodeProvider.kyc.middleware).connect(providerConnection);
-console.log('middleware', middleware);
-
 
 let wallet = mxw.Wallet.createRandom().connect(providerConnection);
 console.log('Wallet Address', '-', wallet.address);
@@ -54,7 +51,9 @@ console.log('Wallet Mnemonic', '-', wallet.mnemonic);
 /**
   * Sign KYC address
   */
+ console.log('STEP 1','Sign KYC address');
 let kycDataPromise = auth.Kyc.create(wallet).then(async (kyc) => {
+  console.log('STEP 1','Started');
   let seed = sha256(toUtf8Bytes(JSON.stringify(sortObject({
     juridical: ['', ''].sort(),
     seed: utils.getHash(utils.randomBytes(32))
@@ -70,8 +69,8 @@ let kycDataPromise = auth.Kyc.create(wallet).then(async (kyc) => {
   });
 
   const data = await kyc.sign(kycAddress);
-  console.log('KYC Data', JSON.stringify(data));
-  console.log('KYC Address', JSON.stringify(kycAddress));
+  console.log('STEP 1','Completed');
+
   return data;
 })
 
@@ -80,19 +79,68 @@ let kycDataPromise = auth.Kyc.create(wallet).then(async (kyc) => {
 /**
   * Provider Sign KYC Data
   */
-auth.Kyc.create(provider).then(async (kyc) => {
+ console.log('STEP 2','Provider Sign KYC Data');
 
-  let kycData = await kycDataPromise.then(kycData => kycData);
+kycTransactionPromise = auth.Kyc.create(provider).then(async (kyc) => {
+  console.log('STEP 2','Started');
 
-  let kycTransaction = {
-    payload: kycData,
+  let nonSignedTransaction = {
+    payload: await kycDataPromise.then(kycData => kycData),
     signatures: []
   };
-  let transaction = await kyc.signTransaction(kycTransaction);
-  console.log("KYC Transaction Signature Length", transaction.signatures);
-  console.log("KYC Transaction Signature Payload", transaction.payload);
-
-
+  let transaction = await kyc.signTransaction(nonSignedTransaction);
+  console.log('STEP 2','Completed');
+  return transaction;
 });
 
 
+/**
+  * Issuer Sign KYC Data
+  */
+ console.log('STEP 3','Issuer Sign KYC Data');
+
+kycTransactionPromise = auth.Kyc.create(issuer).then(async (kyc) => {
+  console.log('STEP 3','Started');
+
+  let providerSignedTransaction = await kycTransactionPromise
+    .then(transaction => transaction)
+    console.log('STEP 3','Completed');
+
+  return await kyc.signTransaction(providerSignedTransaction);
+});
+
+
+/**
+  * Verify Transaction Signature
+  */
+ console.log('STEP 4','Verify Transaction Signature');
+
+const isValidSignature = async () => {
+  console.log('STEP 4','Started');
+  let issuerSignedTransaction = await kycTransactionPromise
+    .then(transaction => transaction);
+
+  issuerSignedTransaction.signatures.every(signature => {
+    return mxw.utils.verify(JSON.stringify(
+      issuerSignedTransaction.payload), signature.signature, computeAddress(signature.pub_key.value))
+  })
+  console.log('STEP 4','Completed');
+}
+isValidSignature().then(value => console.log('is Signature Valid?',value))
+
+
+/**
+  * Whitelist a Wallet Address
+  */
+ console.log('STEP 5','Whitelist a Wallet Address');
+
+let whitelistReceipt = auth.Kyc.create(middleware).then(async (kyc) => {
+  console.log('STEP 5','Started');
+
+  let signedTransaction = await kycTransactionPromise
+    .then(transaction => transaction);
+    console.log('STEP 5','Completed');
+  return await kyc.whitelist(signedTransaction);
+});
+
+whitelistReceipt.then(value => console.log('receipt status', value.status))

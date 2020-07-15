@@ -1,4 +1,4 @@
-<a href="https://maxonrow.com"><img src="https://maxonrow.com/images/maxonrow_gold.png" title="MAXONROW" alt="MAXONROW"></a>
+![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
 
 ## Implement Fungible Token using our SDK (Work in progress)

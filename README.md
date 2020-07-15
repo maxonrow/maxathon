@@ -19,3 +19,7 @@
 
 - Sample FT implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/ft-sample)
 - checkout our [cookbook](https://medium.com/) on how to design & implement FT.
+
+**Please! remember to claps, follow & share our cookbook. we will mint you something! You will find out soon!**
+
+**START HACKING NOW!**

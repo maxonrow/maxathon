@@ -12,4 +12,6 @@ To start the container, run `docker run -p 26656:26656 -p 26657:26657 --name max
 
 To stop container, run `docker stop maxonrow`
 
+To re-run a stopped container, run `docker run -p 26656:26656 -p 26657:26657 -d maxonrow`
+
 Check rpc endpoint: http://localhost:26657

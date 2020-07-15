@@ -32,9 +32,9 @@
 - execute `npm run start`
 - you should see an output message `KYC Process Completed !!` in your terminal
 - congratulation, your machine now is blockchain ready! You have just successfully completed a KYC process.
-- for more detail how to design KYC (<-- this will be a link to git source code) using Maxonrow SDK <a href="https://medium.com/" target="_blank">click here</a>
-- for more detail how to design NFT (<-- this will be a link to git source code) using Maxonrow SDK <a href="https://medium.com/" target="_blank">click here</a>
-- for more detail how to design FT  (<-- this will be a link to git source code) using Maxonrow SDK <a href="https://medium.com/" target="_blank">click here</a>
+- for more detail how to <a href="https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/kyc-starter-kit" target="_blank">design KYC</a> using Maxonrow SDK, please claps & follow   <a href="https://medium.com/" target="_blank">our article</a>
+- for more detail how to <a href="https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/nft-starter-kit" target="_blank">design NFT</a> using Maxonrow SDK, please claps & follow   <a href="https://medium.com/" target="_blank">our article</a>
+- for more detail how to <a href="https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/ft-starter-kit" target="_blank">design FT</a> using Maxonrow SDK, please claps & follow  <a href="https://medium.com/" target="_blank">our article</a>
 
 ### Step 7 - Stop & Restart Docker Container
 - stop docker container `docker stop maxonrow`

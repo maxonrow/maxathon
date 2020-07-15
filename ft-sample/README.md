@@ -28,5 +28,5 @@
 
 ### Step 5 - Checkout Article
 
-- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- checkout our [cookbook](https://medium.com/) on how to design & implement FT.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!

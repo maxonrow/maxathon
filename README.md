@@ -1,9 +1,21 @@
 # ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
+## Starter Kit
+
 - Setup Maxonrow SDK Blockchain Environment [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/blockchain-starter-kit)
+- This is a prerequisite in order to use our blockchain network. 
 
-- Sample KYC (Know Your Customer) implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/kyc-sample)
+## Know Your Customer
 
-- Sample NFT (Non-Fungible Token) implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/nft-sample)
+- Sample KYC implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/kyc-sample)
+- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
 
-- Sample FT (Fungible Token) implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/ft-sample)
+## Non-Fungible Token
+
+- Sample NFT implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/nft-sample)
+- checkout our [cookbook](https://medium.com/) on how to design & implement NFT.
+
+## Fungible Token
+
+- Sample FT implementation [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/ft-sample)
+- checkout our [cookbook](https://medium.com/) on how to design & implement FT.

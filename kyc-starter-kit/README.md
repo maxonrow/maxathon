@@ -1,4 +1,4 @@
-![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
 ## Implement KYC using our SDK (Work in progress)
 
@@ -10,9 +10,23 @@
 
 - install TypeScript [click here](https://www.typescriptlang.org/index.html#download-links) (skip if you have this preinstalled)
 
-### Step 3 - Build & Run
+### Step 3 - Clone Startup Kit
 
-- go to directory `/maxathon/blockchain-sdk/` you should see a `package.json`
+- clone startup kit [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0) (skip if you have this preinstalled)
+
+- ```sh
+  git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git
+  ```
+
+### Step 4 - Build & Run
+
+- go to directory `/maxathon/kyc-starter-kit/` you should see `package.json` & `tsconfig.json`
 - execute `npm install`
 - execute `npm run build`
 - execute `npm run start`
+- you should see `KYC Process Completed !!` output generated in your terminal
+
+### Step 5 - Checkout Article
+
+- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- please! remember to claps, follow & share. we will mint you something! You will find out soon!

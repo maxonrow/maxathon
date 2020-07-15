@@ -1,4 +1,4 @@
-![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
 ## Setup [Maxonrow SDK](https://github.com/maxonrow/mxw-sdk-js) on Local Environment
 
@@ -32,3 +32,8 @@
 
 - stop docker container `docker stop maxonrow`
 - restart when you need it `docker run -p 26656:26656 -p 26657:26657 -d maxonrow`
+
+### Step 6 - Checkout Article
+
+- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- please! remember to claps, follow & share. we will mint you something! You will find out soon!

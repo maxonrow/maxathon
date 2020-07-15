@@ -9,18 +9,30 @@
 ### Step 2 - Install Node.js
 - install Node.js via package manager <a href="https://nodejs.org/en/download/package-manager/" target="_blank">click here</a> (skip if you have this preinstalled)
 
-### Step 4 - Install TypeScript
+### Step 3 - Install TypeScript
 - install TypeScript <a href="https://www.typescriptlang.org/index.html#download-links" target="_blank">click here</a> (skip if you have this preinstalled)
 
-### Step 3 - Clone Startup Kit
+### Step 4 - Clone Startup Kit
 - clone startup kit <a href="https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0" target="_blank">click here</a>
 - ```bash 
   git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git
   ```
 
-### Step 4 - Startup Blockchain
+### Step 5 - Startup Blockchain
 - go to directory `/maxathon/blockchain-sdk/docker/` you should see a `DockerFile`
 - start your local blockchain following the steps below
 - build docker image `docker build . --tag maxonrow`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow`
 - check your RPC service `http://localhost:26657`
+
+### Step 6 - Build & Run
+- go to directory `/maxathon/blockchain-sdk/` you should see a `package.json`
+- execute `npm install`
+- execute `npm run build`
+- execute `npm run start`
+- you should see an output message `KYC Process Completed !!` in your terminal
+
+
+### Step 7 - Stop & Restart Docker Container
+- stop docker container `docker stop maxonrow`
+- restart when you need it `docker run -p 26656:26656 -p 26657:26657 -d maxonrow`

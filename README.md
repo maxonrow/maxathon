@@ -3,7 +3,7 @@
 ## Starter Kit
 
 - Setup Maxonrow SDK Blockchain Environment [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0/blockchain-starter-kit)
-- This is a prerequisite in order to use our blockchain network. 
+- This is a prerequisite in order to use our blockchain network.
 
 ## Know Your Customer
 

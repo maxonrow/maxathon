@@ -1,10 +1,10 @@
 import { nodeProvider } from './node/node';
 import { mxw } from 'mxw-sdk-js/dist/index';
-import KycData from './kyc/kyc-data';
-import kycProvider from './kyc/kyc-provider';
-import KycIssuer from './kyc/kyc-issuer';
-import KycValidator from './kyc/kyc-validator';
-import KycWhitelistor from './kyc/kyc-whitelistor';
+import KycData from './kyc/data';
+import kycProvider from './kyc/provider';
+import KycIssuer from './kyc/issuer';
+import KycValidator from './kyc/validator';
+import KycWhitelistor from './kyc/whitelistor';
 
 let silentRpc = nodeProvider.trace.silentRpc;
 let providerConnection: mxw.providers.Provider;

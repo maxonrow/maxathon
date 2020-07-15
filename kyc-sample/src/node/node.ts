@@ -40,6 +40,4 @@ const localnet: Node = {
 const nodes: { [name: string]: Node } = { localnet };
 const nodeProvider: Node = localnet;
 
-export {
-    nodeProvider, nodes, localnet,
-};
+export { nodeProvider, nodes, localnet };

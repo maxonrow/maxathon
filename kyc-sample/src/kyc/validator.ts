@@ -1,4 +1,4 @@
-import { mxw, auth } from 'mxw-sdk-js/dist/index';
+import { mxw } from 'mxw-sdk-js/dist/index';
 import { computeAddress, sha256, toUtf8Bytes } from 'mxw-sdk-js/dist/utils'
 
 export default class KycValidator {

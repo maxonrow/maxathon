@@ -1,12 +1,17 @@
 import { nodeProvider } from './node/node';
-import { mxw } from 'mxw-sdk-js/dist/index';
-import KycData from './nft/creator';
+import { mxw ,nonFungibleToken as token} from 'mxw-sdk-js/dist/index';
+import NonFungibleToken from './nft/token';
+import Creator from './nft/creator';
 
 let silentRpc = nodeProvider.trace.silentRpc;
 let providerConnection: mxw.providers.Provider;
 let provider: mxw.Wallet;
 let issuer: mxw.Wallet;
 let middleware: mxw.Wallet;
+let feeCollector: String;
+let wallet: mxw.Wallet;
+let nonFungibleToken: token.NonFungibleToken;
+let issuerNonFungibleToken: token.NonFungibleToken;
 
 /**
   * initialization
@@ -34,16 +39,29 @@ providerConnection = new mxw.providers.JsonRpcProvider(
 
 provider = mxw.Wallet.fromMnemonic(nodeProvider.kyc.provider).connect(providerConnection);
 
-issuer = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer);
+issuer = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer).connect(providerConnection);
 
 middleware = mxw.Wallet.fromMnemonic(nodeProvider.kyc.middleware).connect(providerConnection);
 
-let wallet = mxw.Wallet.createRandom().connect(providerConnection);
+feeCollector =  nodeProvider.nonFungibleToken.feeCollector 
 
+wallet = mxw.Wallet.createRandom().connect(providerConnection);
 
 
 const run = async () => {
-  
+
+  const nftProperties = new NonFungibleToken().nonFungibleTokenProperties;
+
+  const creator = new Creator(nftProperties, issuer, wallet);
+  issuerNonFungibleToken = await creator.create();
+  nonFungibleToken = await creator.loadNFT();
+  issuerNonFungibleToken = await creator.loadIssuerNFT();
+    
+  console.log('nftProperties', '-', nftProperties);
+  console.log('issuerNonFungibleToken', '-', issuerNonFungibleToken);
+  console.log('nonFungibleToken', '-', nonFungibleToken);
+  console.log('issuerNonFungibleToken', '-', issuerNonFungibleToken);
+
   console.log('Wallet Address', '-', wallet.address);
   console.log('Wallet Mnemonic', '-', wallet.mnemonic);
 

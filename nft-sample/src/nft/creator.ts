@@ -1,16 +1,61 @@
-import { mxw, auth, utils } from 'mxw-sdk-js/dist';
-import { sha256, toUtf8Bytes } from 'mxw-sdk-js/dist/utils'
-import { sortObject } from 'mxw-sdk-js/dist/utils/misc';
+import { mxw, nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
 
 export default class Creator {
-    public wallet: mxw.Wallet;
-    public constructor(wallet: mxw.Wallet) {
-        this.wallet = wallet;
+
+    #nonFungibleTokenProperties: token.NonFungibleTokenProperties;
+    #issuer: mxw.Wallet;
+    #wallet: mxw.Wallet;
+
+    public constructor(
+        nonFungibleTokenProperties: token.NonFungibleTokenProperties,
+        issuer: mxw.Wallet,
+        wallet: mxw.Wallet) {
+        this.#nonFungibleTokenProperties = nonFungibleTokenProperties;
+        this.#issuer = issuer;
+        this.#wallet = wallet;
     }
 
-    public xxx() {
-
+    public get nonFungibleTokenProperties(): token.NonFungibleTokenProperties {
+        return this.#nonFungibleTokenProperties;
     }
+    public set nonFungibleTokenProperties(value: token.NonFungibleTokenProperties) {
+        this.#nonFungibleTokenProperties = value;
+    }
+    public get issuer(): mxw.Wallet {
+        return this.#issuer;
+    }
+    public set issuer(value: mxw.Wallet) {
+        this.#issuer = value;
+    }
+    public get wallet(): mxw.Wallet {
+        return this.#wallet;
+    }
+    public set wallet(value: mxw.Wallet) {
+        this.#wallet = value;
+    }
+
+
+    public create(): Promise<mxw.nonFungibleToken.NonFungibleToken> {
+        const create = async (): Promise<mxw.nonFungibleToken.NonFungibleToken> =>
+            await token.NonFungibleToken.create(this.nonFungibleTokenProperties, this.issuer).then((token) => {
+                return token as token.NonFungibleToken;
+            });
+
+        return create();
+    }
+
+    public async loadNFT(): Promise<token.NonFungibleToken> {
+        return await token.NonFungibleToken.fromSymbol(
+            this.#nonFungibleTokenProperties.symbol, this.#wallet);
+    }
+
+    public async loadIssuerNFT(): Promise<token.NonFungibleToken> {
+        return await token.NonFungibleToken.fromSymbol(
+            this.#nonFungibleTokenProperties.symbol, this.#issuer);
+    }
+
 
 }
+
+
 

@@ -8,15 +8,11 @@
 
 ### Step 2 - Clone Startup Kit
 
-- clone startup kit [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0)
-
-- ```sh
-  git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git
-  ```
+- clone startup kit `$ git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git`
 
 ### Step 3 - Startup Blockchain
 
-- go to directory `/maxathon/blockchain-sdk/docker/` you should see a `DockerFile`
+- go to directory `/maxathon/blockchain-starter-kit/docker/` you should see a `DockerFile`
 - start your local blockchain following the steps below
 - build docker image `docker build . --tag maxonrow`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow`

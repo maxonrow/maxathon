@@ -12,11 +12,7 @@
 
 ### Step 3 - Clone Startup Kit
 
-- clone startup kit [click here](https://github.com/phua-gingsheng/maxathon/tree/hackathon-1.0) (skip if you have this preinstalled)
-
-- ```sh
-  git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git
-  ```
+- clone source code `$ git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git`
 
 ### Step 4 - Build & Run
 
@@ -24,7 +20,7 @@
 - execute `npm install`
 - execute `npm run build`
 - execute `npm run start`
-- you should see `KYC Process Completed !!` output generated in your terminal
+- you should see `Success !!!` output generated in your terminal
 
 ### Step 5 - Checkout Article
 

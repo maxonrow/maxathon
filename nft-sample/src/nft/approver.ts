@@ -1,21 +1,49 @@
 import { NonFungibleTokenActions } from 'mxw-sdk-js/dist/non-fungible-token';
-import { nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
+import { mxw, nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
+import Util from '../util/util'
 
 export default class Approver {
 
     #symbol: String;
+    #provider: mxw.Wallet;
+    #issuer: mxw.Wallet;
+    #middleware: mxw.Wallet;
 
-    public constructor(symbol: String) {
+    public constructor(symbol: String, provider: mxw.Wallet,
+        issuer: mxw.Wallet, middleware: mxw.Wallet) {
         this.#symbol = symbol;
+        this.#provider = provider;
+        this.#issuer = issuer;
+        this.#middleware = middleware;
     }
-    public get symbol() {
+    public get symbol(): String {
         return this.#symbol;
     }
-    public set symbol(value) {
+    public set symbol(value: String) {
         this.#symbol = value;
     }
+    public get issuer(): mxw.Wallet {
+        return this.#issuer;
+    }
+    public set issuer(value: mxw.Wallet) {
+        this.#issuer = value;
+    }
+    public get provider(): mxw.Wallet {
+        return this.#provider;
+    }
+    public set provider(value: mxw.Wallet) {
+        this.#provider = value;
+    }
+    public get middleware(): mxw.Wallet {
+        return this.#middleware;
+    }
+    public set middleware(value: mxw.Wallet) {
+        this.#middleware = value;
+    }
 
-    public approve() {
+
+    public async approve() {
+
         let overrides = {
             tokenFees: [
                 { action: NonFungibleTokenActions.transfer, feeName: "default" },
@@ -31,25 +59,14 @@ export default class Approver {
             pub: false   // private
 
         };
+
+        return await Util.performNonFungibleTokenStatus(this.#symbol,
+            token.NonFungibleToken.approveNonFungibleToken, this.#provider,
+            this.#issuer, this.#middleware, overrides);
+
     }
 
-    public performNonFungibleTokenStatus(symbol: string, perform: any, overrides?: any) {
 
-        return perform(symbol, token.NonFungibleToken.approveNonFungibleToken, overrides).then((transaction: token.NonFungibleTokenStatusTransaction) => {
-            return token.NonFungibleToken.signNonFungibleTokenStatusTransaction(transaction, issuer);
-        }).then((transaction: token.NonFungibleTokenStatusTransaction) => {
-
-            return token.NonFungibleToken.sendNonFungibleTokenStatusTransaction(transaction, middleware).then((receipt) => {
-
-                if (overrides && overrides.notRefresh) {
-                    return receipt;
-                }
-                // return refresh(symbol).then(() => {
-                //     return receipt;
-                // });
-            });
-        });
-    }
 
 }
 

@@ -2,6 +2,8 @@ import { nodeProvider } from './node/node';
 import { mxw ,nonFungibleToken as token} from 'mxw-sdk-js/dist/index';
 import NonFungibleToken from './nft/token';
 import Creator from './nft/creator';
+import Util from './util/util'
+import Approver from './nft/approver';
 
 let silentRpc = nodeProvider.trace.silentRpc;
 let providerConnection: mxw.providers.Provider;
@@ -49,18 +51,19 @@ wallet = mxw.Wallet.createRandom().connect(providerConnection);
 
 
 const run = async () => {
+  console.log('Create, Approve, Mind, Transfer and Burn Token in progress.....');
 
   const nftProperties = new NonFungibleToken().nonFungibleTokenProperties;
 
   const creator = new Creator(nftProperties, issuer, wallet);
   issuerNonFungibleToken = await creator.create();
-  nonFungibleToken = await creator.loadNFT();
-  issuerNonFungibleToken = await creator.loadIssuerNFT();
+  nonFungibleToken = await Util.reload(nftProperties, wallet);
+  issuerNonFungibleToken = await Util.reload(nftProperties, issuer);
+
+  //const receipt = await new Approver(nftProperties.symbol, provider, issuer, middleware).approve();
     
-  console.log('nftProperties', '-', nftProperties);
-  console.log('issuerNonFungibleToken', '-', issuerNonFungibleToken);
-  console.log('nonFungibleToken', '-', nonFungibleToken);
-  console.log('issuerNonFungibleToken', '-', issuerNonFungibleToken);
+  //console.log('receipt', '-', receipt);
+
 
   console.log('Wallet Address', '-', wallet.address);
   console.log('Wallet Mnemonic', '-', wallet.mnemonic);

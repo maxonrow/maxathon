@@ -32,5 +32,5 @@ export default interface Node {
         issuer: string,
         middleware: string,
         feeCollector: string,
-    }
+    },
 };

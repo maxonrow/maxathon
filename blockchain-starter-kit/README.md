@@ -21,7 +21,16 @@
 
 - check your RPC service `http://localhost:26657`
 - execute `curl http://localhost:26657/version`
-- you should see an output message `{"jsonrpc":"2.0","id":"","result":{"Maxonrow":"1.3.1-84bd0079","Tendermint":"0.32.8"}}` in your terminal
+- you should see an output message 
+```
+        {
+            "jsonrpc":"2.0",
+            "id":"",
+            "result":{"Maxonrow":"1.3.1-84bd0079",
+            "Tendermint":"0.32.8"
+        }
+``` 
+in your terminal
 - congratulation, your machine now is blockchain ready !
 
 ### Step 5 - Stop & Restart Docker Container

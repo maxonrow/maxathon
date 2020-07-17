@@ -1,6 +1,5 @@
 import { mxw } from "mxw-sdk-js";
-import { FungibleTokenProperties } from "mxw-sdk-js/dist/token";
-import { BigNumber, bigNumberify } from "mxw-sdk-js/dist/utils";
+import Logger from "./logger";
 
 export default class Wallet{
     public owner: mxw.Wallet;
@@ -12,8 +11,8 @@ export default class Wallet{
         this.token = token;
       }
 
-    public TransferAll(){
-        return this.GetBalance().then((balance)=>{
+    public transferAll(){
+        return this.getBalance().then((balance)=>{
             return this.owner.provider.getTransactionFee("token","token-transferFungibleToken", {
                 symbol: this.token.symbol,
                 from: this.owner.address,
@@ -22,6 +21,8 @@ export default class Wallet{
                 memo: "Transfer Fungible Token"
             }).then((fee)=>{
                 return this.token.transfer(this.other.address, balance, {fee}).then((receipt)=>{
+                    if(receipt.status == 1) Logger.green("Successfully transfered all " + this.token.state.name + " to " + this.other.address);
+                    else Logger.red('Failed to transfer');
                     return receipt;
                 })
                 
@@ -30,16 +31,18 @@ export default class Wallet{
         })
     }
     
-    public GetBalance(){
+    public getBalance(){
         return this.token.getBalance().then((balance)=>{
-            console.log("Total Fungible Token Owned: ",mxw.utils.formatUnits(balance, this.token.state.decimals));
+            Logger.yellow("Total " + this.token.state.name +" Token Owned: " + mxw.utils.formatUnits(balance, this.token.state.decimals));
             return balance;
         })
     }
 
-    public BurnAll(){
-        return this.GetBalance().then((balance)=>{
+    public burnAll(){
+        return this.getBalance().then((balance)=>{
             return this.token.burn(balance).then((receipt) => {
+                if(receipt.status == 1) Logger.green("Successfully burned all " + this.token.state.name);
+                    else Logger.red('Failed to burn');
                 return receipt;
             });
         })

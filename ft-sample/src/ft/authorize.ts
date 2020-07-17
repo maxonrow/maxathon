@@ -1,11 +1,8 @@
 import { mxw, token } from "mxw-sdk-js";
-import {
-  FungibleTokenProperties,
-  FungibleTokenActions,
-} from "mxw-sdk-js/dist/token";
-import Query from "./query";
+import {FungibleTokenProperties,FungibleTokenActions,} from "mxw-sdk-js/dist/token";
+import Logger from "./logger";
 
-export default class Approver {
+export default class Authorize {
   public fungibleTokenProperties: FungibleTokenProperties;
   public perform: any;
   public issuer: mxw.Wallet;
@@ -25,8 +22,8 @@ export default class Approver {
     this.middleware = middleware;
   }
 
-  public Approve() {
-    console.log("\x1b[33m%s\x1b[0m","Authorizing  action...");
+  public approve() {
+    Logger.yellow("Authorizing  action...")
     let burnable = true;
     let overrides = {
       tokenFees: [
@@ -54,12 +51,14 @@ export default class Approver {
         );
       })
       .then((transaction: any) => {
-        console.log("\x1b[34m%s\x1b[0m","Issuer Signed");
+        Logger.blue("Issuer Signed");
         return token.FungibleToken.sendFungibleTokenStatusTransaction(
           transaction,
           this.middleware
         ).then((receipt) => {
-          console.log("\x1b[34m%s\x1b[0m","Middleware Signed");
+          Logger.blue("Middleware Signed");
+          if(receipt.status ==1) Logger.green("Action Authorized");
+          else Logger.red("Action Authorized");
             return receipt;
         });
       });

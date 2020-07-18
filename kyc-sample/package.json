@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon src/main.ts",
     "build": "tsc",
-    "start": "node dist/main.js "
+    "start": "node dist/main.js $*"
   },
   "keywords": [],
   "author": "",

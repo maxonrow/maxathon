@@ -50,54 +50,80 @@ middleware = mxw.Wallet.fromMnemonic(nodeProvider.kyc.middleware).connect(
   providerConnection
 );
 
-let wallet = mxw.Wallet.createRandom().connect(providerConnection);
 
 const run = async () => {
-  /**
-   * Sign KYC address
-   */
-  const kycData: mxw.KycData = await new KycData(wallet).signKycAddress();
 
-  /**
-   * Provider Sign KYC Data
-   */
-  const partialSignedTrx: mxw.KycTransaction = await new KycProvider(
-    provider,
-    kycData
-  ).signTransaction();
+  let wallets: Array<String> = new Array();
+  const value = Number(process.argv[2]);
+  const numberOfWallet: number = (Number.isInteger(value)) ? Number(process.argv[2]):0;
 
-  /**
-   *  Issuer Sign KYC Data
-   */
-  const allSignedTrx: mxw.KycTransaction = await new KycIssuer(
-    issuer,
-    partialSignedTrx
-  ).signTransaction();
+  console.log(`creating ${numberOfWallet} wallets`);
 
-  /**
-   * Verify Transaction Signature
-   */
-  const isValidSignature: Boolean = await new KycValidator(
-    allSignedTrx
-  ).isValidSignature();
+  for (let i = 1; i < numberOfWallet + 1; i++) {
 
-  /**
-   * Whitelist a Wallet Address
-   */
-  const whitelistReceipt: mxw.providers.TransactionReceipt = await new KycWhitelistor(
-    middleware,
-    allSignedTrx
-  ).whitelist();
-  console.log("Wallet Address", "-", wallet.address);
-  console.log("Wallet Mnemonic", "-", wallet.mnemonic);
-  console.log("Receipt Hash", "-", whitelistReceipt.hash);
+    let wallet = mxw.Wallet.createRandom().connect(providerConnection);
 
-  let result: String = (await (isValidSignature && wallet.isWhitelisted()))
-    ? "KYC Process Completed !!"
-    : "KYC Process Failed !!";
+    /**
+     * Sign KYC address
+     */
+    const kycData: mxw.KycData = await new KycData(wallet).signKycAddress();
 
-  console.log("\x1b[33m%s\x1b[0m", result); //yellow
+    /**
+     * Provider Sign KYC Data
+     */
+    const partialSignedTrx: mxw.KycTransaction = await new KycProvider(
+      provider,
+      kycData
+    ).signTransaction();
 
+    /**
+     *  Issuer Sign KYC Data
+     */
+    const allSignedTrx: mxw.KycTransaction = await new KycIssuer(
+      issuer,
+      partialSignedTrx
+    ).signTransaction();
+
+    /**
+     * Verify Transaction Signature
+     */
+    const isValidSignature: Boolean = await new KycValidator(
+      allSignedTrx
+    ).isValidSignature();
+
+    /**
+     * Whitelist a Wallet Address
+     */
+    const whitelistReceipt: mxw.providers.TransactionReceipt = await new KycWhitelistor(
+      middleware,
+      allSignedTrx
+    ).whitelist();
+    
+    wallets.push(wallet.address);
+
+    console.log("Wallet Address", "-", wallet.address);
+    console.log("Wallet Mnemonic", "-", wallet.mnemonic);
+    console.log("Receipt Hash", "-", whitelistReceipt.hash);
+
+    const green = '\x1b[32m';
+    const red = '\x1b[31m';
+    let result: String = (await (isValidSignature && wallet.isWhitelisted()))
+      ? `${green}wallet number ${i} creation & whitelist success!`
+      : `${red}wallet number ${i} creation & whitelist failed!`;
+
+    console.log("\x1b[33m%s\x1b[0m", result); //yellow
+
+  }
+
+  console.log('List of wallet:')
+  wallets.forEach((address) => {
+    console.log(`${address}`)
+  }
+);
+
+
+const yellow = '\x1b[33m';
+  console.log(`${yellow}KYC process completed!`)
   process.exit();
 
   //http://localhost:26657/is_whitelisted?address=%22mxw1xrqwfukpg8eehqyyza3lz0k6vlhq5r0ldk3zdx%22

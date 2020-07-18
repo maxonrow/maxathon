@@ -17,10 +17,11 @@
 ### Step 4 - Build & Run
 
 - go to directory `/maxathon/kyc-sample/` you should see `package.json` & `tsconfig.json`
-- execute `npm install`
-- execute `npm run build`
-- execute `npm run start`
-- you should see `KYC Process Completed !!` output generated in your terminal
+- execute `$ npm install`
+- execute `$ npm run build`
+- execute `$ npm run start <number of wallet you want to create>`
+- example `$ npm run start 3` will create 3 whitelisted wallets.
+- you should see `$ KYC process completed!` output generated in your terminal
 
 ### Step 5 - Checkout Article
 

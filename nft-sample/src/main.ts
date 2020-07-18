@@ -39,15 +39,15 @@ providerConnection = new mxw.providers.JsonRpcProvider(
     }
   });
 
-provider = mxw.Wallet.fromMnemonic(nodeProvider.kyc.provider).connect(providerConnection);
+provider = mxw.Wallet.fromMnemonic(nodeProvider.nonFungibleToken.provider).connect(providerConnection);
 
-issuer = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer).connect(providerConnection);
+issuer = mxw.Wallet.fromMnemonic(nodeProvider.nonFungibleToken.issuer).connect(providerConnection);
 
-middleware = mxw.Wallet.fromMnemonic(nodeProvider.kyc.middleware).connect(providerConnection);
+middleware = mxw.Wallet.fromMnemonic(nodeProvider.nonFungibleToken.middleware).connect(providerConnection);
 
 feeCollector =  nodeProvider.nonFungibleToken.feeCollector 
 
-wallet = mxw.Wallet.createRandom().connect(providerConnection);
+wallet = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer).connect(providerConnection);
 
 
 const run = async () => {
@@ -60,9 +60,9 @@ const run = async () => {
   nonFungibleToken = await Util.reload(nftProperties, wallet);
   issuerNonFungibleToken = await Util.reload(nftProperties, issuer);
 
-  //const receipt = await new Approver(nftProperties.symbol, provider, issuer, middleware).approve();
+  const receipt = await new Approver(nftProperties.symbol, provider, issuer, middleware).approve();
     
-  //console.log('receipt', '-', receipt);
+  console.log('receipt', '-', receipt);
 
 
   console.log('Wallet Address', '-', wallet.address);

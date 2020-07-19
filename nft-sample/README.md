@@ -1,6 +1,6 @@
 # ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
-## Implement Non-Fungible Token using our SDK
+## How to Implement Non-Fungible Token using MAXONROW SDK
 
 ### Step 1 - Install Node.js
 

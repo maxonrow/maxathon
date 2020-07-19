@@ -25,5 +25,5 @@
 
 ### Step 5 - Checkout Article
 
-- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- checkout our cookbook on detailed explanation of the code & how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!

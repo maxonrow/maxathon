@@ -2,11 +2,11 @@ import { mxw, nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
 
 export default class Util {
 
-    public static reload(nftProperties: token.NonFungibleTokenProperties, wallet: mxw.Wallet)
+    public static reload(symbol: string, wallet: mxw.Wallet)
         : Promise<token.NonFungibleToken> {
 
         return token.NonFungibleToken.fromSymbol(
-            nftProperties.symbol, wallet);
+            symbol, wallet);
     }
 
 

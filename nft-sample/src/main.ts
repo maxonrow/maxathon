@@ -4,6 +4,7 @@ import NonFungibleToken from './nft/token';
 import Creator from './nft/creator';
 import Util from './util/util'
 import Approver from './nft/approver';
+import Minter from './nft/minter';
 
 let silentRpc = nodeProvider.trace.silentRpc;
 let providerConnection: mxw.providers.Provider;
@@ -54,15 +55,21 @@ const run = async () => {
   console.log('Create, Approve, Mind, Transfer and Burn Token in progress.....');
 
   const nftProperties = new NonFungibleToken().nonFungibleTokenProperties;
+  const symbol: string =  nftProperties.symbol;
 
   const creator = new Creator(nftProperties, issuer, wallet);
   issuerNonFungibleToken = await creator.create();
-  nonFungibleToken = await Util.reload(nftProperties, wallet);
-  issuerNonFungibleToken = await Util.reload(nftProperties, issuer);
+  nonFungibleToken = await Util.reload(symbol, wallet);
+  issuerNonFungibleToken = await Util.reload(symbol, issuer);
 
-  const receipt = await new Approver(nftProperties.symbol, provider, issuer, middleware).approve();
-    
+  const receipt = await new Approver(symbol, provider, issuer, middleware).approve();
+  nonFungibleToken = await Util.reload(symbol, wallet);
+  issuerNonFungibleToken = await Util.reload(symbol, issuer);
   console.log('receipt', '-', receipt);
+
+  const trxReceipt = await new Minter(symbol, wallet, issuer).mint();
+    
+  console.log('receipt', '-', trxReceipt);
 
 
   console.log('Wallet Address', '-', wallet.address);

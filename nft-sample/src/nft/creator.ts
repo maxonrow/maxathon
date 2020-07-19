@@ -44,17 +44,6 @@ export default class Creator {
         return create();
     }
 
-    public async loadNFT(): Promise<token.NonFungibleToken> {
-        return await token.NonFungibleToken.fromSymbol(
-            this.#nonFungibleTokenProperties.symbol, this.#wallet);
-    }
-
-    public async loadIssuerNFT(): Promise<token.NonFungibleToken> {
-        return await token.NonFungibleToken.fromSymbol(
-            this.#nonFungibleTokenProperties.symbol, this.#issuer);
-    }
-
-
 }
 
 

@@ -68,7 +68,7 @@ const run = async () => {
   console.log('Wallet Address', '-', wallet.address);
   console.log('Wallet Mnemonic', '-', wallet.mnemonic);
 
-  let result: String = "Success !!!";
+  let result: String = "NFT Operation Successfully Completed!";
 
   console.log('\x1b[33m%s\x1b[0m', result);  //yellow
 

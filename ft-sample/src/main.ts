@@ -177,7 +177,7 @@ providerConnection = new mxw.providers.JsonRpcProvider(nodeProvider.connection,n
   
   
   Logger.white("------------------------------------------");
-  Logger.green("Had completed all operation");
+  Logger.green("FT Operation Successfully Completed!");
   Logger.white("------------------------------------------");
   process.exit();
 };

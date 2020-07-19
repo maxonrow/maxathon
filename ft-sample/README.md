@@ -1,6 +1,6 @@
 # ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
-## Implement Fungible Token using our SDK (Work in progress)
+## Implement Fungible Token using our SDK
 
 ### Step 1 - Install Node.js
 
@@ -20,9 +20,9 @@
 - execute `npm install`
 - execute `npm run build`
 - execute `npm run start`
-- you should see `KYC Process Completed !!` output generated in your terminal
+- you should see `FT Operation Successfully Completed!` output generated in your terminal
 
 ### Step 5 - Checkout Article
 
-- checkout our [cookbook](https://medium.com/) on how to design & implement FT.
+- checkout our [cookbook](https://medium.com/) on detailed explanation of the code & how to design & implement FT.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!

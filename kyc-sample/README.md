@@ -1,6 +1,6 @@
 # ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
-## Implement KYC using our SDK (Work in progress)
+## Implement KYC using our SDK
 
 ### Step 1 - Install Node.js
 

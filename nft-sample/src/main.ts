@@ -1,10 +1,12 @@
 import { nodeProvider } from './node/node';
 import { mxw ,nonFungibleToken as token} from 'mxw-sdk-js/dist/index';
 import NonFungibleToken from './nft/token';
+import * as crypto from "crypto";
 import Creator from './nft/creator';
 import Util from './util/util'
 import Approver from './nft/approver';
 import Minter from './nft/minter';
+import Transferer from './nft/transferer';
 
 let silentRpc = nodeProvider.trace.silentRpc;
 let providerConnection: mxw.providers.Provider;
@@ -52,7 +54,7 @@ wallet = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer).connect(providerConnec
 
 
 const run = async () => {
-  console.log('Create, Approve, Mind, Transfer and Burn Token in progress.....');
+  console.log('Step 1 - Creation in progress .....');
 
   const nftProperties = new NonFungibleToken().nonFungibleTokenProperties;
   const symbol: string =  nftProperties.symbol;
@@ -62,14 +64,20 @@ const run = async () => {
   nonFungibleToken = await Util.reload(symbol, wallet);
   issuerNonFungibleToken = await Util.reload(symbol, issuer);
 
+  console.log('Step 2 - Approval in progress .....');
   const receipt = await new Approver(symbol, provider, issuer, middleware).approve();
   nonFungibleToken = await Util.reload(symbol, wallet);
   issuerNonFungibleToken = await Util.reload(symbol, issuer);
-  console.log('receipt', '-', receipt);
 
-  const trxReceipt = await new Minter(symbol, wallet, issuer).mint();
-    
-  console.log('receipt', '-', trxReceipt);
+  console.log('Step 3 - Minting in progress .....');
+  const itemId = crypto.randomBytes(16).toString('hex');
+  const minter = new Minter(symbol, itemId);
+  const trxReceipt = await minter.mint(wallet, issuer.address);
+
+  console.log('Step 3 - Transfer in progress .....');
+  const transferReceipt = await new Transferer(symbol, itemId, issuer)
+  .transfer(wallet.address);
+  console.log('transferReceipt', '-', transferReceipt);
 
 
   console.log('Wallet Address', '-', wallet.address);

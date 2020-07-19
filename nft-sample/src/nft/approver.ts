@@ -60,6 +60,7 @@ export default class Approver {
 
         };
 
+
         return await Util.performNonFungibleTokenStatus(this.#symbol,
             token.NonFungibleToken.approveNonFungibleToken, this.#provider,
             this.#issuer, this.#middleware, overrides);

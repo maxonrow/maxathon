@@ -37,7 +37,7 @@ export default class Creator {
 
     public create(): Promise<mxw.nonFungibleToken.NonFungibleToken> {
         const create = async (): Promise<mxw.nonFungibleToken.NonFungibleToken> =>
-            await token.NonFungibleToken.create(this.nonFungibleTokenProperties, this.issuer).then((token) => {
+            await token.NonFungibleToken.create(this.nonFungibleTokenProperties, this.wallet).then((token) => {
                 return token as token.NonFungibleToken;
             });
 

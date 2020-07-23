@@ -43,7 +43,7 @@ in your terminal
 - checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!
 
-## Wallet Generated During Genesis
+### Predefined Wallets
 
 - These wallets have been KYC and each having 1000000000000000 mxw, inside their wallet.
 

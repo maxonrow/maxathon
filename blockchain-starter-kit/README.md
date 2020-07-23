@@ -45,7 +45,7 @@ in your terminal
 
 ## Wallet Generated During Genesis
 
-- These wallets have been KYC and each having 1000 mxw, inside their wallet.
+- These wallets have been KYC and each having 1000000000000000 mxw, inside their wallet.
 
 ```
     {"Name":"delegator",      "Address":"mxw1rjgjjkkjqtd676ydahysmnfsg0v4yvwfe9vmh0", "MasterPriv":"64cad178806d2c91c2546ff1d0ac77345970518a557dfa04aadfa964cd25e1b9", "DerivedPriv":"48b3289edf59e6459e25b5fc7cbecd050761cdfbb1a5cb7584ccf03634bc3c10", "Mnemonic":"angle about cactus pigeon weapon oval lonely derive veteran recycle air nice curtain expand meat family course illness busy night inherit model nerve twin"},

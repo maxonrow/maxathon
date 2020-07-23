@@ -48,8 +48,6 @@ in your terminal
 - These wallets have been KYC and each having 1000 mxw, inside their wallet.
 
 ```
-
-[
     {"Name":"delegator",     "Address":"mxw1rjgjjkkjqtd676ydahysmnfsg0v4yvwfe9vmh0", "MasterPriv":"64cad178806d2c91c2546ff1d0ac77345970518a557dfa04aadfa964cd25e1b9", "DerivedPriv":"48b3289edf59e6459e25b5fc7cbecd050761cdfbb1a5cb7584ccf03634bc3c10", "Mnemonic":"angle about cactus pigeon weapon oval lonely derive veteran recycle air nice curtain expand meat family course illness busy night inherit model nerve twin"},
     {"Name":"kyc-auth-1",    "Address":"mxw1y0j6xqc8dsafx2tfv4m8765mw7wrvlespzfyfq", "MasterPriv":"45a67418a3ae4c9ab7d8d15d8ee93a3b8f1f80afb7a82192f3c05a3973d655b7", "DerivedPriv":"f172b0a7d9b1893e457686755ae1f558efeecd4ab257f9a911737672492f6e7a", "Mnemonic":"belt world purchase stick spare one music suggest dentist kit globe save snack sauce liquid face undo select ethics choose august rhythm cycle crucial"},
     {"Name":"kyc-auth-2",    "Address":"mxw1lt2c9nrg4rxjw4804lw9sx5ewesxp66wxp7yc8", "MasterPriv":"49f19259925dc158108730d0dcb29b67e5e8dd4ac3fe5b0d6c7fb25362ca1138", "DerivedPriv":"89b546261ad6e22fb8e64481d6337441c8ad2fbe26568abffd9dd0b79049ed1f", "Mnemonic":"health vacant depart draw track critic submit gate chalk various fatigue garden monitor cousin taxi rabbit connect nerve siege finger pave drastic sad coconut"},
@@ -90,7 +88,5 @@ in your terminal
     {"Name":"ns-provider",   "Address":"mxw10za0fxan50gdkke34yrhwv9svv3a3pujycg3c6", "MasterPriv":"2b04254a3d58ca7bc65b10adbad9405d2899233904d28458efba8bf7b2308d03", "DerivedPriv":"2ceb7b4f3c9c637816a4229e2d70ad8fd7dc8fd75d835e0b6d8915fdc4ca470c", "Mnemonic":"frost anchor admit engage minute pony half half rival fiction radio oven pizza siren state virtual fiscal urge clap dentist captain pink viable strike"},
     {"Name":"ns-issuer",     "Address":"mxw1m6kpmyfdmzha33lfmmerk4puus5ptdzn4qttxx", "MasterPriv":"ce46c0669d419f5fd92cd2f3e68fdde3a8bf95268fb889a7c4995d678cc73511", "DerivedPriv":"bfbdd41c9b7fdc8f4b95cbecedfb718bcd326e70b0d4949b410f0da2b2c3fbd8", "Mnemonic":"have silly fat resemble radar viable evolve start side path later point wreck annual mesh shoulder attitude own label robot test gossip anxiety year"},
     {"Name":"acc-40",        "Address":"mxw1x5cf8y99ntjc8cjm00z603yfqwzxw2mawemf73", "MasterPriv":"4c3c48560523411307f9f0ab64c855676fa3530476f1eedcbfebd13ba3112975", "DerivedPriv":"b5ef9f3a497e80427a31fd63377a66997798ec791160e8e3cada57f2c55006bb", "Mnemonic":"sing vacant great genre twelve exercise scan dish tornado believe solid economy online negative section damp crucial top outdoor cradle exist swarm pistol screen"} 
-]
-
 
     ``` 

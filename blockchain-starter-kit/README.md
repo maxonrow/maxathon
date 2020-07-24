@@ -8,7 +8,7 @@
 
 ### Step 2 - Clone Startup Kit
 
-- clone startup kit `$ git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git`
+- clone startup kit `$ git clone -b hackathon-1.0 https://github.com/maxonrow/maxathon.git`
 
 ### Step 3 - Startup Blockchain
 
@@ -21,16 +21,17 @@
 
 - check your RPC service `http://localhost:26657`
 - execute `curl http://localhost:26657/version`
-- you should see an output message 
-```
+- you should see an output message in your terminal
+
+```json
         {
             "jsonrpc":"2.0",
             "id":"",
             "result":{"Maxonrow":"1.3.1-84bd0079",
             "Tendermint":"0.32.8"
         }
-``` 
-in your terminal
+```
+
 - congratulation, your machine now is blockchain ready !
 
 ### Step 5 - Stop & Restart Docker Container
@@ -45,9 +46,13 @@ in your terminal
 
 ### Step 7 - Predefined Wallets
 
-- These wallets have been KYC and each having 1000000000000000 mxw, inside their wallet.
+- This dockerfile meant for maxonrow localnet development purposes.
+- Some KYC-ed accounts are pre-generated upon the startup of this localnet.
+- Fee settings are set and maintenance group are defined as well.
+- Each KYC-ed wallets having 1000,000,000,000,000 MXW correspondingly.
+- You can checkout the pre defined [genesis](https://github.com/maxonrow/maxonrow-go/blob/master/tests/config/genesis.json), [config file](https://github.com/maxonrow/maxonrow-go/blob/master/tests/config/config.toml) & [private keys](https://github.com/maxonrow/maxonrow-go/blob/master/tests/config/keys.json).
 
-```
+```json
     {"Name":"delegator",          "Address":"mxw1rjgjjkkjqtd676ydahysmnfsg0v4yvwfe9vmh0", "MasterPriv":"64cad178806d2c91c2546ff1d0ac77345970518a557dfa04aadfa964cd25e1b9", "DerivedPriv":"48b3289edf59e6459e25b5fc7cbecd050761cdfbb1a5cb7584ccf03634bc3c10", "Mnemonic":"angle about cactus pigeon weapon oval lonely derive veteran recycle air nice curtain expand meat family course illness busy night inherit model nerve twin"},
     {"Name":"kyc-auth-1",         "Address":"mxw1y0j6xqc8dsafx2tfv4m8765mw7wrvlespzfyfq", "MasterPriv":"45a67418a3ae4c9ab7d8d15d8ee93a3b8f1f80afb7a82192f3c05a3973d655b7", "DerivedPriv":"f172b0a7d9b1893e457686755ae1f558efeecd4ab257f9a911737672492f6e7a", "Mnemonic":"belt world purchase stick spare one music suggest dentist kit globe save snack sauce liquid face undo select ethics choose august rhythm cycle crucial"},
     {"Name":"kyc-auth-2",         "Address":"mxw1lt2c9nrg4rxjw4804lw9sx5ewesxp66wxp7yc8", "MasterPriv":"49f19259925dc158108730d0dcb29b67e5e8dd4ac3fe5b0d6c7fb25362ca1138", "DerivedPriv":"89b546261ad6e22fb8e64481d6337441c8ad2fbe26568abffd9dd0b79049ed1f", "Mnemonic":"health vacant depart draw track critic submit gate chalk various fatigue garden monitor cousin taxi rabbit connect nerve siege finger pave drastic sad coconut"},

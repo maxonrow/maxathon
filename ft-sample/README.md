@@ -12,7 +12,7 @@
 
 ### Step 3 - Clone Startup Kit
 
-- clone project `git clone -b hackathon-1.0 https://github.com/phua-gingsheng/maxathon.git`
+- clone project `git clone -b hackathon-1.0 https://github.com/maxonrow/maxathon.git`
 
 ### Step 4 - Build & Run
 

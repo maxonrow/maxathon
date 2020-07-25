@@ -11,7 +11,7 @@
 
 ### Step 2 - Clone Startup Kit
 
-- clone startup kit `$ git clone -b hackathon-1.0 https://github.com/maxonrow/maxathon.git`
+- clone startup kit `$ git clone -b master https://github.com/maxonrow/maxathon.git`
 
 
 ### Step 3 - Startup Blockchain

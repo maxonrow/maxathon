@@ -1,14 +1,18 @@
 # ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
 
+
 ## Setup [Maxonrow SDK](https://github.com/maxonrow/mxw-sdk-js) on Local Environment
+
 
 ### Step 1 - Install Docker
 
 - install docker [click here](https://docs.docker.com/engine/install/) (skip if you have this preinstalled)
 
+
 ### Step 2 - Clone Startup Kit
 
 - clone startup kit `$ git clone -b hackathon-1.0 https://github.com/maxonrow/maxathon.git`
+
 
 ### Step 3 - Startup Blockchain
 
@@ -16,6 +20,7 @@
 - start your local blockchain following the steps below
 - build docker image `docker build . --tag maxonrow`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow`
+
 
 ### Step 4 - Test Blockchain
 
@@ -34,15 +39,18 @@
 
 - congratulation, your machine now is blockchain ready !
 
+
 ### Step 5 - Stop & Restart Docker Container
 
 - stop docker container `docker stop maxonrow`
 - restart when you need it `docker run -p 26656:26656 -p 26657:26657 -d maxonrow`
 
+
 ### Step 6 - Checkout Article
 
-- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- checkout our [cookbook](https://medium.com/maxonrow) on how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!
+
 
 ### Step 7 - Predefined Wallets
 
@@ -79,8 +87,8 @@
     {"Name":"maintainer-1",       "Address":"mxw173qf9y2ae0cx8y07ez6qsl9k2gs2l5955hfc7x", "MasterPriv":"25ce2b0b6fd19a6b4e5ecb6a389e04324a065d9727e0817b667944874c99bb09", "DerivedPriv":"3a044f3ec153bd2b516df90360b5a2ae94d5d6fd8f4eca6e37139e3af37bda77", "Mnemonic":"census tornado rail trophy lizard minor height poem vast record canoe crash ivory scare pony avoid short omit penalty lion lazy aware inch dress" },
     {"Name":"maintainer-2",       "Address":"mxw1643vtl03p3xgyxjgf7wmfuqeg04rkx9txjw6w6", "MasterPriv":"e4330df26c6f34358f0acf46bce3d6615e49670a852e646a33e606ff0a32cdea", "DerivedPriv":"a3f188690d8fe6748f254b682803a0409c72629bd39dc94358206dc9bed4716e", "Mnemonic":"pelican seat keen among festival man embark attract live enhance wait snow name million say own chair swing orchard calm magnet submit romance where" },
     {"Name":"maintainer-3",       "Address":"mxw16jjtd4y0pg0qrksqdctn3r2sap54p0y2nsmjtr", "MasterPriv":"9f199c945233b3f28e96a32437c4b1e3c1ad803b09ffa84a0d0a5813c7e77bbe", "DerivedPriv":"b021f81ca3af56ad2bfb1dfe3cae4db1352080d3250604a062d3660bd1192990", "Mnemonic":"ten brain loop marriage inch physical search begin decline almost kitchen drift above journey dawn patrol fatal gate degree come lizard cousin letter wonder" },
-    {"Name":"ns-feecollector",    "Address":"mxw123xwuat5h9x92w6vdtn4fl2l03t7d793qugxvc","MasterPriv":"aa7325d84067f21c6cc825c2369cf8f39bed4f61500c6d1b45e58d46c9eb9c2f", "DerivedPriv":"e020bd6429e6b01ffb92b3dfe1bf830d961997bf888564fff1eaf6a03a751259", "Mnemonic":"lesson frozen submit awesome visa clinic twice melody sock puppy slot stage typical error toilet swim burden people they suggest project check cream awkward"},
-    {"Name":"dont-use-this-1",    "Address":"mxw1falq8epwennmyrs77yad08773jyj2fs9xeus96","MasterPriv":"3450c6ef8e72994a97e492bf5f02317c0d1f00307dd5751855a9a2750adeb95b", "DerivedPriv":"1ba485622eb0a92c7fbe6db88c30b335a4c03ae47fb22d3372ff748bff48884f", "Mnemonic":"vacuum comic heart gentle dutch square coffee fish unknown curious hurt open whale tag acid until lobster design meadow trigger edge priority forward emerge"},
+    {"Name":"ns-feecollector",    "Address":"mxw123xwuat5h9x92w6vdtn4fl2l03t7d793qugxvc", "MasterPriv":"aa7325d84067f21c6cc825c2369cf8f39bed4f61500c6d1b45e58d46c9eb9c2f", "DerivedPriv":"e020bd6429e6b01ffb92b3dfe1bf830d961997bf888564fff1eaf6a03a751259", "Mnemonic":"lesson frozen submit awesome visa clinic twice melody sock puppy slot stage typical error toilet swim burden people they suggest project check cream awkward"},
+    {"Name":"dont-use-this-1",    "Address":"mxw1falq8epwennmyrs77yad08773jyj2fs9xeus96", "MasterPriv":"3450c6ef8e72994a97e492bf5f02317c0d1f00307dd5751855a9a2750adeb95b", "DerivedPriv":"1ba485622eb0a92c7fbe6db88c30b335a4c03ae47fb22d3372ff748bff48884f", "Mnemonic":"vacuum comic heart gentle dutch square coffee fish unknown curious hurt open whale tag acid until lobster design meadow trigger edge priority forward emerge"},
     {"Name":"acc-29",             "Address":"mxw13xffy4f0jt0e6qrfu8fznez9x6700vmm9kcmff", "MasterPriv":"9e3dd37b7eefc507220fb7caebb60a8eca77281c2ace30879fb5a6e33ff813f8", "DerivedPriv":"873e852046b2c16c6a29967869b2ceb84ec54ffd07eecbe0ea54c0e945850027", "Mnemonic":"taxi arctic keen stove clock tomato pilot risk habit heart image marriage end carry seat more tower build drift pave battle bird base tape" },
     {"Name":"acc-30",             "Address":"mxw1q2csu4l9t4gev5v5jrlmsyw52pr4lgq5sc5ww6", "MasterPriv":"237798aee06fa6cd90e39fa9465977da30ecbc23ecfa511c158d3e521346a591", "DerivedPriv":"4d7da9f3e93707fae79472343f58c6f666c4c2285041daeffe52bfdc51baf7bd", "Mnemonic":"include lumber more wise wrong ozone kit jewel donate inquiry lottery moon absent sail crisp diamond bracket shoe fog thrive verify glow memory fine" },
     {"Name":"token-auth-1",       "Address":"mxw1j4duwuaqdj2na054rmlg3pdzncpmwzdjwtfqht", "MasterPriv":"c1ef95c8556dba097edf13bbe06d53b2eeab694e9e65700304b3e74c745b6df7", "DerivedPriv":"cf15505d9a12189125bb4c008ba9a6f273179ad7765c994b762dbb24fc87aba9", "Mnemonic":"police toilet cupboard song blanket duty wrestle public bike cattle install page option spell scout crop pig answer access alarm gain fish absent pen"},
@@ -115,10 +123,10 @@
     {"Name":"multisig-acc-3",     "Address":"mxw1gh9hlcdevh94rrxj7gd3wtngjrhj50gkt9txvk", "MasterPriv":"62ddfd94ac78b89f116fd6e307d0178f93144cd1c21fccdcababcc31a0af11ee", "DerivedPriv":"84b2445786d3d37a6a42f7c63b6cf19fe7a4aa7218ad16dbe8bd8b3c68137389", "Mnemonic": "shove when pass black expose blouse dial glue original wonder move glad rice guide trophy dish beach legal animal kitchen maze concert ahead keep"},
     {"Name":"multisig-acc-4",     "Address":"mxw14se693s36wrfakqtr4lvxnrpzy6qas9xzc2ck2", "MasterPriv":"38a854bc93771c3c784d063d446eec56cda9bfe6a412758446d8f0e58c206986", "DerivedPriv":"b6c19b57f7db68170dac6d06073fa7ba1f3999dd0a164b9190e338a69776daf2", "Mnemonic": "invite wrong moment tribe disease sock reflect fold vacuum say forward dutch lottery hotel boss parade salad announce dismiss scrap december dog when seven"},
     {"Name":"multisig-nokyc",     "Address":"mxw1858220s2tacfhzgjrxrgyyn5huxsf4r9s9tq5j", "MasterPriv":"bbcd667d4b209656137fd9c0ec0be45f3f1c70fd5f0fe1b5cf50b046c3687497", "DerivedPriv":"4071f66d04277f85599014b16df34fb82ae99c08079d51db15acb0100dec0e30", "Mnemonic": "fire milk legal six result shoulder cake globe quote absorb beauty glass ski crash tilt suspect paddle speed gather tunnel project wife fatal abstract"},
-    {"Name":"multisig-acc-nft-1",  "Address":"mxw1ydvzacxj0ws9jadxkmdzamc897jmln5dd90fzh", "MasterPriv":"4f98f5c30a38387f7a077c0bf966b3254790ba2d54237b3c861657f822afd1bf", "DerivedPriv":"0c409de6a4601cc60064e059ec16d2384b72b0dd3afb17d8c76904eda5fdbe9f", "Mnemonic": "skirt water spatial athlete grab session other reunion exist absorb wall digital feature current pretty ticket online father puppy power deputy shallow craft veteran"},
-    {"Name":"multisig-acc-nft-2",  "Address":"mxw12a25yu06j4dm4y64anu4jnxgg86xu03fupsv0d", "MasterPriv":"3ff56a672596a7df3c7ddceb1ee77e21039809df60db2ae7d94b298926a96914", "DerivedPriv":"089f07adde0c8c627fa16a480ba5fcfb90cb4c1ff2839ff0c440dbcec05d362d", "Mnemonic": "sell squeeze camera purchase match anger fossil tail stumble soda narrow enrich cement popular wrong device pulse memory possible rate spoon timber ability local"},
-    {"Name":"multisig-acc-nft-3",  "Address":"mxw1k0czpc8qkk0f2et2m45cajhplazdfnnyz2kp8f", "MasterPriv":"6fcdae599125627934a17c1ab0fd87560ae4a4f8c351dce26a085e154953c987", "DerivedPriv":"463255674dbcacec67e50011e88cf68b3681d3308a5a266c7456bc6a98841f73", "Mnemonic": "desk annual fence duty repeat donor crash soccer soda feed clutch advice history cycle sea sick prison clinic length life twenty cup control powder"},
-    {"Name":"multisig-acc-nft-4",  "Address":"mxw1cnrsfxyp684mq8cuxa9gedls70796s5u2qarhp", "MasterPriv":"11d1d6cfdcebe68247499fbb0ffc78ee707dba8827a7e90dcb830268e05991ed", "DerivedPriv":"d92bb9a163d5646615b86f85115d400a2322d7505e1a6b6091fcaeeb2cdaccb8", "Mnemonic": "access sword youth build animal wagon follow huge recall pumpkin quit estate shoulder tuna maze jelly elite shiver library borrow enforce dress category start"},
+    {"Name":"multisig-acc-nft-1", "Address":"mxw1ydvzacxj0ws9jadxkmdzamc897jmln5dd90fzh", "MasterPriv":"4f98f5c30a38387f7a077c0bf966b3254790ba2d54237b3c861657f822afd1bf", "DerivedPriv":"0c409de6a4601cc60064e059ec16d2384b72b0dd3afb17d8c76904eda5fdbe9f", "Mnemonic": "skirt water spatial athlete grab session other reunion exist absorb wall digital feature current pretty ticket online father puppy power deputy shallow craft veteran"},
+    {"Name":"multisig-acc-nft-2", "Address":"mxw12a25yu06j4dm4y64anu4jnxgg86xu03fupsv0d", "MasterPriv":"3ff56a672596a7df3c7ddceb1ee77e21039809df60db2ae7d94b298926a96914", "DerivedPriv":"089f07adde0c8c627fa16a480ba5fcfb90cb4c1ff2839ff0c440dbcec05d362d", "Mnemonic": "sell squeeze camera purchase match anger fossil tail stumble soda narrow enrich cement popular wrong device pulse memory possible rate spoon timber ability local"},
+    {"Name":"multisig-acc-nft-3", "Address":"mxw1k0czpc8qkk0f2et2m45cajhplazdfnnyz2kp8f", "MasterPriv":"6fcdae599125627934a17c1ab0fd87560ae4a4f8c351dce26a085e154953c987", "DerivedPriv":"463255674dbcacec67e50011e88cf68b3681d3308a5a266c7456bc6a98841f73", "Mnemonic": "desk annual fence duty repeat donor crash soccer soda feed clutch advice history cycle sea sick prison clinic length life twenty cup control powder"},
+    {"Name":"multisig-acc-nft-4", "Address":"mxw1cnrsfxyp684mq8cuxa9gedls70796s5u2qarhp", "MasterPriv":"11d1d6cfdcebe68247499fbb0ffc78ee707dba8827a7e90dcb830268e05991ed", "DerivedPriv":"d92bb9a163d5646615b86f85115d400a2322d7505e1a6b6091fcaeeb2cdaccb8", "Mnemonic": "access sword youth build animal wagon follow huge recall pumpkin quit estate shoulder tuna maze jelly elite shiver library borrow enforce dress category start"},
     {"Name":"acc-67",             "Address":"mxw15t40pslhza6alat5ls0uth6x233c5545sc994h", "MasterPriv":"88e505f3f520b956855db74c85da053b4b75bb82fe320d55441f883191aa9183", "DerivedPriv":"3a8068eb7a174f3fe939898dedf577288fd624846122253d5cbeea499917e604", "Mnemonic": "obscure exhaust volcano delay dune grant climb sport riot fit useful hire vivid mercy version giant input outdoor glare harsh target vivid leg zero"},
     {"Name":"acc-68",             "Address":"mxw1u8nflv8uzphyakflkt74ya36f3etx8jcz55szn", "MasterPriv":"12051ed25f66d4c511fa67522ee6ecf49a456049eb094f3a21df38f1ef1ea6c5", "DerivedPriv":"131e4a91185f8fe53fc5c303855c058f2e9358e9ae34d7b48dd9186541c99c04", "Mnemonic": "thing organ inhale update popular stage potato tilt forest rich grass claw depth retreat vivid unable design arena bus abuse ride toddler gadget stand"},
     {"Name":"acc-69",             "Address":"mxw19f3hdj9pxkwv7cl7fszj7taguu673hstlh34et", "MasterPriv":"357af8b274abe18f8f44e2a83652f3400235bab67bca0015d02f7baf0d3eeef5", "DerivedPriv":"f5a0d68689db0305dc2f2aeb1d9be4d93f9736ca4725edc5f62ad272001bd2f4", "Mnemonic": "pear cram spray matter kick clown connect neck inject apology elder similar nephew shiver drip country wire awesome rally plug brisk treat can health"},

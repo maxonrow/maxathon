@@ -8,17 +8,17 @@
 ## Know Your Customer
 
 - Sample KYC implementation [click here](https://github.com/maxonrow/maxathon/tree/master/kyc-sample)
-- checkout our [cookbook](https://medium.com/) on how to design & implement KYC.
+- Checkout our [cookbook](https://medium.com/maxonrow) on how to design & implement KYC.
 
 ## Non-Fungible Token
 
 - Sample NFT implementation [click here](https://github.com/maxonrow/maxathon/tree/master/nft-sample)
-- checkout our [cookbook](https://medium.com/) on how to design & implement NFT.
+- Checkout our [cookbook](https://medium.com/maxonrow) on how to design & implement NFT.
 
 ## Fungible Token
 
 - Sample FT implementation [click here](https://github.com/maxonrow/maxathon/tree/master/ft-sample)
-- checkout our [cookbook](https://medium.com/) on how to design & implement FT.
+- Checkout our [cookbook](https://medium.com/maxonrow) on how to design & implement FT.
 
 **Please! remember to claps, follow & share our cookbook. we will mint you something! You will find out soon!**
 

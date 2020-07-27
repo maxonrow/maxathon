@@ -48,7 +48,7 @@ issuer = mxw.Wallet.fromMnemonic(nodeProvider.nonFungibleToken.issuer).connect(p
 
 middleware = mxw.Wallet.fromMnemonic(nodeProvider.nonFungibleToken.middleware).connect(providerConnection);
 
-feeCollector =  nodeProvider.nonFungibleToken.feeCollector 
+feeCollector =  nodeProvider.nonFungibleToken.feeCollector
 
 wallet = mxw.Wallet.fromMnemonic(nodeProvider.kyc.issuer).connect(providerConnection);
 
@@ -59,7 +59,7 @@ const run = async () => {
   const nftProperties = new NonFungibleToken().nonFungibleTokenProperties;
   const symbol: string =  nftProperties.symbol;
 
-  const creator = new Creator(nftProperties, issuer, wallet);
+  const creator = new Creator(nftProperties, middleware, wallet);
   issuerNonFungibleToken = await creator.create();
   nonFungibleToken = await Util.reload(symbol, wallet);
   issuerNonFungibleToken = await Util.reload(symbol, issuer);

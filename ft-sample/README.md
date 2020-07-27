@@ -13,6 +13,8 @@
 ### Step 3 - Clone Startup Kit
 
 - clone project `git clone -b hackathon-1.0 https://github.com/maxonrow/maxathon.git`
+- go to directory `/maxathon/blockchain-starter-kit/`
+- Follow the instruction to run the blockchain
 
 ### Step 4 - Build & Run
 

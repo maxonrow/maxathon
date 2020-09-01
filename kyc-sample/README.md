@@ -1,4 +1,4 @@
-# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
 ## How to Implement KYC using MAXONROW SDK
 
@@ -25,5 +25,5 @@
 
 ### Step 5 - Checkout Article
 
-- checkout our cookbook on detailed explanation of the code & how to design & implement KYC.
+- checkout our [cookbook](https://medium.com/maxonrow/kyc-in-the-maxonrow-blockchain-3c70d84159ee) on detailed explanation of the code & how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!

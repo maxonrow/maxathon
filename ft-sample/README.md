@@ -1,4 +1,4 @@
-# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
 ## How to Implement Fungible Token using MAXONROW SDK
 

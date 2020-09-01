@@ -22,11 +22,6 @@
 - execute `npm run start`
 - you should see `FT Operation Successfully Completed!` output generated in your terminal
 
-### Step 5 - Checkout Article
-
-- checkout our [cookbook](https://medium.com/) on detailed explanation of the code & how to design & implement FT.
-- please! remember to claps, follow & share. we will mint you something! You will find out soon!
-
 ## About this sample
 
 In this sample we create a Fungible Token, then we mint an item, burn the item, transfer item and query the item.

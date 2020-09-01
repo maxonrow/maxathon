@@ -21,8 +21,3 @@
 - execute `npm run build`
 - execute `npm run start`
 - you should see `NFT Operation Successfully Completed!` output generated in your terminal
-
-### Step 5 - Checkout Article
-
-- checkout our [cookbook](https://medium.com/) on detailed explanation of the code & how to design & implement NFT.
-- please! remember to claps, follow & share. we will mint you something! You will find out soon!

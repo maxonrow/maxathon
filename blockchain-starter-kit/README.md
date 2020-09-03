@@ -1,4 +1,4 @@
-# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
 
 ## Setup [Maxonrow SDK](https://github.com/maxonrow/mxw-sdk-js) on Local Environment
@@ -48,7 +48,7 @@
 
 ### Step 6 - Checkout Article
 
-- checkout our [cookbook](https://medium.com/maxonrow) on how to design & implement KYC.
+- checkout our [cookbook](https://medium.com/maxonrow/an-introduction-to-the-maxonrow-blockchain-a34df043d9aa) on how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!
 
 

@@ -4,14 +4,13 @@ ENV WORKING_DIR /
 
 RUN apk add --no-cache bash libgcc
 
-
 ENV GOPATH /go
 ENV PATH "$PATH:/go/bin"
 RUN apk add --no-cache curl git go build-base openssl-dev && \
     mkdir -p /go/src/github.com/maxonrow/maxonrow-go/ && \
     cd /go/src/github.com/maxonrow/maxonrow-go/ && \
     git clone https://github.com/maxonrow/maxonrow-go/ . && \
-    git checkout develop && \
+    git checkout master && \
     make deps install test && \
     cp /go/bin/mxwd /usr/bin && \
     cp /go/bin/mxwcli /usr/bin && \

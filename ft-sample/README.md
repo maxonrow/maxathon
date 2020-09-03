@@ -1,4 +1,4 @@
-# ![https://maxonrow.com](https://maxonrow.com/images/maxonrow_gold.png)
+# ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
 ## How to Implement Fungible Token using MAXONROW SDK
 
@@ -21,11 +21,6 @@
 - execute `npm run build`
 - execute `npm run start`
 - you should see `FT Operation Successfully Completed!` output generated in your terminal
-
-### Step 5 - Checkout Article
-
-- checkout our [cookbook](https://medium.com/) on detailed explanation of the code & how to design & implement FT.
-- please! remember to claps, follow & share. we will mint you something! You will find out soon!
 
 ## About this sample
 

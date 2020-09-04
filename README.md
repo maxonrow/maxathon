@@ -2,8 +2,6 @@
 
 # **MAXathon LauchPad**
 
-<br>
-
 # **Get You Repository**
 
 - In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you, and you will have full access.
@@ -28,7 +26,7 @@
 
 # **Track & Challenges**
 
-## Physical Distancing
+## 1# Physical Distancing
 ![Distancing](https://miro.medium.com/max/700/1*Up_Qr6-syTCg0V_N1JSNTQ.jpeg)
 | Item | Description |
 | ----------- | ----------- |
@@ -42,7 +40,7 @@
 
 <br>
 
-## Credential & Certificate Issuance
+## 2# Credential & Certificate Issuance
 ![Credential](https://miro.medium.com/max/700/1*aalxRMYBkB0u2B-3VWmh6A.jpeg)
 | Item | Description |
 | ----------- | ----------- |
@@ -55,7 +53,7 @@
 
 <br>
 
-## Welfare
+## 3# Welfare
 ![Welfare](https://miro.medium.com/max/700/1*W-MhSijGk-4NXXsidAvciQ.jpeg)
 | Item | Description |
 | ----------- | ----------- |
@@ -68,7 +66,7 @@
 
 <br>
 
-## Virtualizing the New Norm
+## 4# Virtualizing the New Norm
 ![Virtual](https://miro.medium.com/max/700/1*M97cCxl47tu5tvVh_EkFfg.jpeg)
 | Item | Description |
 | ----------- | ----------- |
@@ -81,7 +79,7 @@
 
 <br>
 
-## UI/UX
+## 5# UI/UX
 ![UIUX](https://miro.medium.com/max/700/1*opuq9f87scn5LNohru28GA.jpeg)
 | Item | Description |
 | ----------- | ----------- |

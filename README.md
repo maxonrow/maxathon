@@ -96,7 +96,6 @@
 
 # **Rules**
 - You will receive a GitHub repository from the organisation to submit your work. Only submissions in your official repository will be considered.
-- You can use any programming language, operating system or technology platform you want. 
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 
 # **Judging process & criteria**

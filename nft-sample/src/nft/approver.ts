@@ -56,8 +56,8 @@ export default class Approver {
             burnable: true,
             transferable: true,
             modifiable: true,
-            pub: false   // private
-
+            pub: false,   // private
+            endorserListLimit: 10
         };
 
 

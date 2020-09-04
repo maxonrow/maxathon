@@ -2,36 +2,36 @@ import { mxw, nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
 
 export default class Creator {
 
-    #nonFungibleTokenProperties: token.NonFungibleTokenProperties;
-    #issuer: mxw.Wallet;
-    #wallet: mxw.Wallet;
+    private _nonFungibleTokenProperties: token.NonFungibleTokenProperties;
+    private _issuer: mxw.Wallet;
+    private _wallet: mxw.Wallet;
 
     public constructor(
         nonFungibleTokenProperties: token.NonFungibleTokenProperties,
         issuer: mxw.Wallet,
         wallet: mxw.Wallet) {
-        this.#nonFungibleTokenProperties = nonFungibleTokenProperties;
-        this.#issuer = issuer;
-        this.#wallet = wallet;
+        this._nonFungibleTokenProperties = nonFungibleTokenProperties;
+        this._issuer = issuer;
+        this._wallet = wallet;
     }
 
     public get nonFungibleTokenProperties(): token.NonFungibleTokenProperties {
-        return this.#nonFungibleTokenProperties;
+        return this._nonFungibleTokenProperties;
     }
     public set nonFungibleTokenProperties(value: token.NonFungibleTokenProperties) {
-        this.#nonFungibleTokenProperties = value;
+        this._nonFungibleTokenProperties = value;
     }
     public get issuer(): mxw.Wallet {
-        return this.#issuer;
+        return this._issuer;
     }
     public set issuer(value: mxw.Wallet) {
-        this.#issuer = value;
+        this._issuer = value;
     }
     public get wallet(): mxw.Wallet {
-        return this.#wallet;
+        return this._wallet;
     }
     public set wallet(value: mxw.Wallet) {
-        this.#wallet = value;
+        this._wallet = value;
     }
 
 

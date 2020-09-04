@@ -4,29 +4,29 @@ import { TransactionReceipt } from 'mxw-sdk-js/dist/providers/abstract-provider'
 
 export default class Minter {
 
-    #symbol: string;
-    #itemId: string;
+    private _symbol: string;
+    private _itemId: string;
 
     constructor(symbol: string, itemId: string) {
-        this.#symbol = symbol;
-        this.#itemId = itemId;
+        this._symbol = symbol;
+        this._itemId = itemId;
 
     }
 
     public get symbol(): string {
-        return this.#symbol;
+        return this._symbol;
     }
     public set symbol(value: string) {
-        this.#symbol = value;
+        this._symbol = value;
     }
 
     public async mint(minter: mxw.Wallet, address: string) : Promise<TransactionReceipt> {
         let nftMinter: token.NonFungibleToken =
-            new NonFungibleToken(this.#symbol, minter);
+            new NonFungibleToken(this._symbol, minter);
 
         const itemProp = {
-            symbol: this.#symbol,
-            itemID: this.#itemId,
+            symbol: this._symbol,
+            itemID: this._itemId,
             properties: "item properties",
             metadata: "item metadata"
         } as token.NonFungibleTokenItem;

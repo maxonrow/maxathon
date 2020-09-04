@@ -4,41 +4,41 @@ import Util from '../util/util'
 
 export default class Approver {
 
-    #symbol: String;
-    #provider: mxw.Wallet;
-    #issuer: mxw.Wallet;
-    #middleware: mxw.Wallet;
+    private _symbol: String;
+    private _provider: mxw.Wallet;
+    private _issuer: mxw.Wallet;
+    private _middleware: mxw.Wallet;
 
     public constructor(symbol: String, provider: mxw.Wallet,
         issuer: mxw.Wallet, middleware: mxw.Wallet) {
-        this.#symbol = symbol;
-        this.#provider = provider;
-        this.#issuer = issuer;
-        this.#middleware = middleware;
+        this._symbol = symbol;
+        this._provider = provider;
+        this._issuer = issuer;
+        this._middleware = middleware;
     }
     public get symbol(): String {
-        return this.#symbol;
+        return this._symbol;
     }
     public set symbol(value: String) {
-        this.#symbol = value;
+        this._symbol = value;
     }
     public get issuer(): mxw.Wallet {
-        return this.#issuer;
+        return this._issuer;
     }
     public set issuer(value: mxw.Wallet) {
-        this.#issuer = value;
+        this._issuer = value;
     }
     public get provider(): mxw.Wallet {
-        return this.#provider;
+        return this._provider;
     }
     public set provider(value: mxw.Wallet) {
-        this.#provider = value;
+        this._provider = value;
     }
     public get middleware(): mxw.Wallet {
-        return this.#middleware;
+        return this._middleware;
     }
     public set middleware(value: mxw.Wallet) {
-        this.#middleware = value;
+        this._middleware = value;
     }
 
 
@@ -61,9 +61,9 @@ export default class Approver {
         };
 
 
-        return await Util.performNonFungibleTokenStatus(this.#symbol,
-            token.NonFungibleToken.approveNonFungibleToken, this.#provider,
-            this.#issuer, this.#middleware, overrides);
+        return await Util.performNonFungibleTokenStatus(this._symbol,
+            token.NonFungibleToken.approveNonFungibleToken, this._provider,
+            this._issuer, this._middleware, overrides);
 
     }
 

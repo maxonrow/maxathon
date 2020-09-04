@@ -6,7 +6,7 @@
 
 # **Get You Repository**
 
-- Submissions are made using your team's repo under the xxx organisation here.
+- Submissions are made using your team's repo under the organisation here.
 - In order to get a repo, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repo will then be created for you, and you will have full access.
 - You can choose to work in a repo elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repo for judging. Make sure whatever code you have is committed to your official repo by 11.59pm Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm.
 
@@ -98,7 +98,7 @@
 - You will receive a GitHub repository from the organisation to submit your work. Only submissions in your official repository will be considered.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 
-# **Judging process & criteria**
+# **Judging Process & Criteria**
 - Pitch : The 20 finalist teams will pitch their solution via the platform on 3-October-2020. Each team will have 10 minutes, including the Q&A session.
 - Judging process : The teams will be evaluated through their pitch and the Q&A session directly on the platform.
 - Jury deliberation : At the end of the pitch session, video calls will be deliberated via the platform, in order to designate the winning team for each track.
@@ -115,6 +115,6 @@
 <br>
 
 # **Support**
-- Please join the Slack channel for questions and discussions.
-- [General](https://maxathongroup.slack.com/archives/CSMG32FHU), [Physical Distancing](https://maxathongroup.slack.com/archives/C01A7K1J95W), [Welfare](https://maxathongroup.slack.com/archives/C01A7K34QC8), [Virtual the New Norm](https://maxathongroup.slack.com/archives/C01A7L28RJL), [UIUX](https://maxathongroup.slack.com/archives/C01936P5T9V), [TeamFinding](https://maxathongroup.slack.com/archives/C019G40UBK9)
+- Please join the Slack channel as below for questions and discussions.
+ [General](https://maxathongroup.slack.com/archives/CSMG32FHU), [Physical Distancing](https://maxathongroup.slack.com/archives/C01A7K1J95W), [Welfare](https://maxathongroup.slack.com/archives/C01A7K34QC8), [Virtual the New Norm](https://maxathongroup.slack.com/archives/C01A7L28RJL), [UIUX](https://maxathongroup.slack.com/archives/C01936P5T9V), [TeamFinding](https://maxathongroup.slack.com/archives/C019G40UBK9)
 - Use hashtags in the chat to easily share resources or ask for help about different technologies or platforms. eg. #blockchain, #kyc, #nft 

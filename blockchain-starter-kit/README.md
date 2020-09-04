@@ -16,11 +16,14 @@
 
 ### Step 3 - Startup Blockchain
 
+- get the image `docker pull maxonrow-go:v1.3.7-localnet`
+- start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow-go:v1.3.7-localnet`
+
+Alternative way to startup the local maxonrow blockchain
 - go to directory `/maxathon/blockchain-starter-kit/docker/` you should see a `DockerFile`
 - start your local blockchain following the steps below
 - build docker image `docker build . --tag maxonrow`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow`
-
 
 ### Step 4 - Test Blockchain
 
@@ -180,4 +183,4 @@
     {"Name":"acc-118",            "Address":"mxw1ztdv8m5qjdtz450c8mzkakkm4m3pw6056hvdq7", "MasterPriv":"b8794d8481b1aa8712c40fdf7d84ca86f798e95b62b27876bde0dc3d316c7cb1", "DerivedPriv":"dd59fb40487231c29908e0fc06fcd3b8f98635c3ac7672ffce59c9bad35c5e80", "Mnemonic": "foster oval skill venture scene bulk rookie atom spare palm list follow decline own shift tonight that lumber athlete wrestle discover pilot humble carbon"},
     {"Name":"acc-119",            "Address":"mxw1p0lc0xrecas2t5hzs0sczetsjylf3py5902sjz", "MasterPriv":"a88ea439474a5848edb1b5dfa6ad8c78c8ac29d55951849373afefe29d484f5f", "DerivedPriv":"81f8960b6c7d7c76f81333192e736afe8a5bbc3efb7649286caea9c9fd167c0c", "Mnemonic": "supply biology gloom sniff axis involve have faint slow monster shrug arch february essence credit dinner minor spot level width animal trick appear endless"},
     {"Name":"acc-120",            "Address":"mxw1s8y8qqxyheclu3zyzx7lvegsyd9dwthmgax27l", "MasterPriv":"96fce7f7652aaad79716327975e7efb7d374710ff3825170193a6870bcb2c77a", "DerivedPriv":"a13d035966d857fe5fc9fa47141f95f38503ba0a72fbe082dd0efc13d2f4d874", "Mnemonic": "poverty couple heavy blanket evidence claw judge spread void detail brave peanut edit unhappy walk document tag monster tonight bitter assault path grape asset"}
-``` 
+```

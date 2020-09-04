@@ -6,7 +6,7 @@
 
 - In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you, and you will have full access.
 - Source code submissions need to be made using your team's repository.
-- You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm.
+- You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
 - Please ensure to create your project name (this name will be used for your github repository)
 
 <br>
@@ -117,3 +117,4 @@
 - Please join the Slack channel as below for questions and discussions.
  [General](https://maxathongroup.slack.com/archives/CSMG32FHU), [Physical Distancing](https://maxathongroup.slack.com/archives/C01A7K1J95W), [Welfare](https://maxathongroup.slack.com/archives/C01A7K34QC8), [Virtual the New Norm](https://maxathongroup.slack.com/archives/C01A7L28RJL), [UIUX](https://maxathongroup.slack.com/archives/C01936P5T9V), [TeamFinding](https://maxathongroup.slack.com/archives/C019G40UBK9)
 - Use hashtags in the chat to easily share resources or ask for help about different technologies or platforms. eg. #blockchain, #kyc, #nft 
+- All date/time mentioned above following timezone GMT+8

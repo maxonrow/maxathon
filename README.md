@@ -4,7 +4,7 @@
 
 <br>
 
-# **Get Started**
+# **Get You Repository**
 
 - Submissions are made using your team's repo under the xxx organisation here.
 - In order to get a repo, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repo will then be created for you, and you will have full access.
@@ -99,7 +99,7 @@
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 
 # **Judging process & criteria**
-- Pitch : The 20 finalist teams will pitch their solution via the platform on 3-October-2020. Each team will have 5 minutes, including the Q&A session.
+- Pitch : The 20 finalist teams will pitch their solution via the platform on 3-October-2020. Each team will have 10 minutes, including the Q&A session.
 - Judging process : The teams will be evaluated through their pitch and the Q&A session directly on the platform.
 - Jury deliberation : At the end of the pitch session, video calls will be deliberated via the platform, in order to designate the winning team for each track.
 - Winners announcement : Right after the jury deliberation, winners will be announced during the closing conference.

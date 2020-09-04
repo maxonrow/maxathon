@@ -1,7 +1,7 @@
 # ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
 
-## Setup [Maxonrow SDK](https://github.com/maxonrow/mxw-sdk-js) on Local Environment
+## Setup Maxonrow Blockchain LocalNet
 
 
 ### Step 1 - Install Docker

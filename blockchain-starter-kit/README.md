@@ -16,7 +16,7 @@
 
 ### Step 3 - Startup Blockchain
 
-- get the image `docker pull maxonrow-go:v1.3.7-localnet`
+- get the image `docker pull maxonrow/maxonrow-go:v1.3.7-localnet`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow-go:v1.3.7-localnet`
 
 Alternative way to startup the local maxonrow blockchain

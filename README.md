@@ -1,6 +1,6 @@
 # ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
-# **MAXathon LauchPad**
+# **MAXathon LaunchPad**
 
 # **Get You Repository**
 

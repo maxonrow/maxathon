@@ -6,9 +6,9 @@
 
 # **Get You Repository**
 
-- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repo will then be created for you, and you will have full access.
+- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you, and you will have full access.
 - Source code submissions need to be made using your team's repository.
-- You can choose to work in a repo elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repo for judging. Make sure whatever code you have is committed to your official repo by 11.59pm Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm.
+- You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm.
 - Please ensure to create your project name (this name will be used for your github repository)
 
 <br>

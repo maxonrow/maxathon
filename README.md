@@ -1,5 +1,4 @@
 # ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
-# ![https://maxonrow.com](https://miro.medium.com/max/700/0*kpCt_uQKeG3y3EIl)
 
 # **MAXathon LauchPad**
 

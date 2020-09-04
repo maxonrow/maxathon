@@ -19,8 +19,8 @@
 - get the image `docker pull maxonrow/maxonrow-go:v1.3.7-localnet`
 - start container `docker run -p 26656:26656 -p 26657:26657 --name maxonrow -d maxonrow/maxonrow-go:v1.3.7-localnet`
 
+The above steps is recommended. Alternative way to startup the local maxonrow blockchain as below
 
-Alternative way to startup the local maxonrow blockchain
 - go to directory `/maxathon/blockchain-starter-kit/docker/` you should see a `DockerFile`
 - start your local blockchain following the steps below
 - build docker image `docker build . --tag maxonrow`

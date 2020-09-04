@@ -3,11 +3,11 @@ import { nodeProvider } from "../node/node";
 import { nonFungibleToken as token } from 'mxw-sdk-js/dist/index';
 
 export default class NonFungibleToken {
-    #nonFungibleTokenProperties: token.NonFungibleTokenProperties;
+    private _nonFungibleTokenProperties: token.NonFungibleTokenProperties;
 
     public constructor() {
         let symbol = "NFT" + hexlify(randomBytes(4)).substring(2);
-        this.#nonFungibleTokenProperties = {
+        this._nonFungibleTokenProperties = {
             name: "MY" + symbol,
             symbol: symbol,
             fee: {
@@ -20,10 +20,10 @@ export default class NonFungibleToken {
     }
 
     public get nonFungibleTokenProperties(): token.NonFungibleTokenProperties {
-        return this.#nonFungibleTokenProperties;
+        return this._nonFungibleTokenProperties;
     }
     public set nonFungibleTokenProperties(value: token.NonFungibleTokenProperties) {
-        this.#nonFungibleTokenProperties = value;
+        this._nonFungibleTokenProperties = value;
     }
 
 

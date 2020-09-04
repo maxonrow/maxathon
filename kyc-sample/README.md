@@ -23,7 +23,12 @@
 - example `$ npm run start 3` will create 3 whitelisted wallets.
 - you should see `$ KYC process completed!` output generated in your terminal
 
-### Step 5 - Checkout Article
+### Step 5 - Verify Account 
+ 
+- check the account whitelisted `http://localhost:26657/is_whitelisted?address="{Address}"`
+- check the account details     `http://localhost:26657/account?address="{Address}"`
+
+### Step 6 - Checkout Article
 
 - checkout our [cookbook](https://medium.com/maxonrow/kyc-in-the-maxonrow-blockchain-3c70d84159ee) on detailed explanation of the code & how to design & implement KYC.
 - please! remember to claps, follow & share. we will mint you something! You will find out soon!

@@ -22,7 +22,8 @@
 - You will receive a GitHub repository from the organisation to submit your work. Only submissions in your official repository will be considered.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 - Your final code need to be supplied together with **Dockerfile or Docker Compose** so that judges can run your code for final evaluation easily. 
-- Maxonrow have all the functions that can help to build the solution for all challenges which participants should fully leverage on, thus, solution should be built by fully utilizing Maxonrow blockchain & be Maxonrow centric. Participants are free to integrate with other blockchain systems for innovation purposes provided Maxonrow blockchain itself is not able to fulfill the needs or criteria. Any innovative idea is welcomed as long as it is bounded within Maxonrow’s ecosystem.
+- Maxonrow have all the functions that can help to build the solution for all challenges which participants should fully leverage on, thus, solution should be built by fully utilizing Maxonrow blockchain & be Maxonrow centric. Participants are free to integrate with other blockchain systems for innovation purposes provided Maxonrow blockchain itself is not able to fulfill the needs or criteria. Any innovative idea is welcomed as long as the above mentioned fulfilled.
+
 <br>
 
 # **Starter Kit**

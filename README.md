@@ -14,7 +14,7 @@
   2. Challenge : *e.g. Challenge #1 Physical Distancing*
   2. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*
   3. Team Members FullName : *e.g. 1)Mark Zuckerberg, 2)Elon Musk* 
-  4. Team Members Github : *e.g. https://github.com/mark-zukerberg, https://github.com/elon-musk*
+  4. Team Members Github : *e.g. https://github.com/mark, https://github.com/elon-musk*
 
 <br>
 

@@ -15,12 +15,13 @@
 
 | Kits | More Info |
 | ------------- | ------------- |
-| Blockchain LocalNet | - This is a prerequisite in order to use our blockchain network. <br> - Setup Maxonrow blockchain localNet [click here](https://github.com/maxonrow/maxathon/tree/master/blockchain-starter-kit) <br> - Checkout out [cookbook](https://medium.com/maxonrow/an-introduction-to-the-maxonrow-blockchain-a34df043d9aa) on maxonrow blockchain introduction. |
+| Blockchain LocalNet | - This is a prerequisite in order to use our blockchain network. <br> - Setup Maxonrow blockchain localNet [click here](https://github.com/maxonrow/maxathon/tree/master/blockchain-starter-kit) |
+| Blockchain API | - Checkout out our [API documentation](https://maxonrow-docs.readthedocs.io/en/latest/) <br> - Checkout out [cookbook](https://medium.com/maxonrow/an-introduction-to-the-maxonrow-blockchain-a34df043d9aa) on maxonrow blockchain introduction. |
 | Blockchain SDK | - Blockchain SDK Source Code [click here](https://github.com/maxonrow/mxw-sdk-js) <br> - Blockchain SDK API [click here](https://docs.maxonrow.com/mxw-sdk-js) |
 | Know Your Customer | - Sample KYC implementation [click here](https://github.com/maxonrow/maxathon/tree/master/kyc-sample) <br> - Checkout our [cookbook](https://medium.com/maxonrow/kyc-in-the-maxonrow-blockchain-3c70d84159ee) on how to design & implement KYC. |
 | Non-Fungible Token | - Sample NFT implementation [click here](https://github.com/maxonrow/maxathon/tree/master/nft-sample) |
 | Fungible Token | - Sample FT implementation [click here](https://github.com/maxonrow/maxathon/tree/master/ft-sample) |
-| Maxonrow Blockchain | - Checkout out our [API documentation](https://maxonrow-docs.readthedocs.io/en/latest/) |
+
 
 <br>
 

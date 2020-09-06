@@ -9,7 +9,7 @@
 - Please ensure to create your project name (this name will be used for your github repository)
 - Source code submissions need to be made using your team's repository.
 - You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
-- Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/D016XR6A4Q5) following the format below
+- Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/C019R6D58MD) following the format below
   1. Team Name : *e.g. Mark Zuckerberg* 
   2. Challenge : *e.g. Challenge #1 Physical Distancing*
   2. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*

@@ -4,10 +4,17 @@
 
 # **Get You Repository**
 
-- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you, and you will have full access.
+- Final submissions are made using your team's repository under [here](https://github.com/MaxonrowDev?tab=repositories)
+- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you with full access.
+- Please ensure to create your project name (this name will be used for your github repository)
 - Source code submissions need to be made using your team's repository.
 - You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
-- Please ensure to create your project name (this name will be used for your github repository)
+- Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/D016XR6A4Q5) following the format below
+  1. Team Name : *e.g. Mark Zuckerberg* 
+  2. Challenge : *e.g. Challenge #1 Physical Distancing*
+  2. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*
+  3. Team Members FullName : *e.g. 1)Mark Zuckerberg, 2)Elon Musk* 
+  4. Team Members Github : *e.g. https://github.com/mark-zukerberg, https://github.com/elon-musk*
 
 <br>
 
@@ -31,9 +38,9 @@
 ![Distancing](https://miro.medium.com/max/700/1*Up_Qr6-syTCg0V_N1JSNTQ.jpeg)
 | Item | Description |
 | ----------- | ----------- |
-| Problem Statement | How do we present a holistic multi-dimensional Dashboard? |
-| Focus Area  | - UIUX Design & Engineering Application. (Compulsory) <br> - Data Science & AI (Good to have) <br> - Any idea/problem statement that you can think of !|
-| Example Solution | A self-service analytics dashboards that help to uncover hidden insights and help decisions be data driven. |
+| Problem Statement | How to make use of AI & Analytics to monitor and apply "Physical Distancing" from data collected via IoT ? |
+| Focus Area  | - Data Science & AI (Compulsory). <br> - IoT & Engineering Application (Good to have) <br> - Any idea/problem statement that you can think of !|
+| Example Solution | - Model that can identify crowded places and predict potential outbreak areas. <br> - Model that monitors and sends out alerts upon identification of lockdown violators. |
 | Preffered Tech Stack | Any |
 | Example DataSet | - Video, image, geolocation, IP address, IoT collected data <br> - or any type of data that you can think of |
 | Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-distancing) |
@@ -97,6 +104,7 @@
 # **Rules**
 - You will receive a GitHub repository from the organisation to submit your work. Only submissions in your official repository will be considered.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
+- Your final code need to be supplied together with **Dockerfile or Docker Compose** so that judges can run your code for final evaluation easily. 
 
 # **Judging Process & Criteria**
 - Pitch : The 20 finalist teams will pitch their solution via the platform on 3-October-2020. Each team will have 10 minutes, including the Q&A session.

@@ -43,7 +43,7 @@
 | Example Solution | - Model that can identify crowded places and predict potential outbreak areas. <br> - Model that monitors and sends out alerts upon identification of lockdown violators. |
 | Preffered Tech Stack | Any |
 | Example DataSet | - Video, image, geolocation, IP address, IoT collected data <br> - or any type of data that you can think of |
-| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-distancing) |
+| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-distancing) *This prototype comes with minimal innovation/code for demonstration purposes only* |
 | Cookbook | [Medium Article](https://medium.com/maxonrow/maxathon-challenge-1-physical-distancing-ea03769bbd43) |
 
 <br>
@@ -56,7 +56,7 @@
 | Focus Area  | - Blockchain (NFT), Engineering Application (Compulsory) <br> - Data Science & AI (Good to have) | 
 | Example Solution | - Store huge amount of incorruptible credentials records with an accurate verification strategy. <br> - Gives individuals total privacy and control of their personal information, while making data shareable on government, and ensuring security of identity transactions <br> - Any idea/problem statement that you can think of !|
 | Preffered Tech Stack | Backend: NodeJS, Typescript, Go, Rust, Java <br> Frontend: React, VueJS, HTML5 <br> Mobile: ReactNative, Java, Swift <br> Data: Any |
-| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-credential) |
+| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-credential) *This prototype comes with minimal innovation/code for demonstration purposes only* |
 | Cookbook | [Medium Article](https://medium.com/maxonrow/maxathon-challenge-2-credential-and-certificate-issuance-d7729ce59aaf) |
 
 <br>
@@ -69,7 +69,7 @@
 | Focus Area  | - Blockchain (NFT/FT), Engineering Application. (Compulsory) | 
 | Example Solution | - Platform for the government to provide subsidy/relief to businesses. <br> - Platform for government that automate data verification and reporting, facilitate regulatory oversight, reduce operational friction, and eliminate errors associated with manual auditing. <br> - Any idea/problem statement that you can think of !|
 | Preffered Tech Stack | Backend: NodeJS, Typescript, Go, Rust, Java <br> Frontend: React, VueJS, HTML5 <br> Mobile: ReactNative, Java, Swift |
-| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-welfare) |
+| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-welfare) *This prototype comes with minimal innovation/code for demonstration purposes only* |
 | Cookbook | [Medium Article](https://medium.com/maxonrow/maxathon-challenge-3-welfare-c5a898b417b1) |
 
 <br>
@@ -82,7 +82,7 @@
 | Focus Area  | - Blockchain (NFT/FT), Engineering Application. (Compulsory) | 
 | Example Solution | - A trusted platform to find your merchants or any providers genuineness. <br> - An online medical consultation platform for home-based or self quarantine patient with guarantee privacy <br> - Any idea/problem statement that you can think of !|
 | Preffered Tech Stack | Backend: NodeJS, Typescript, Go, Rust, Java <br> Frontend: React, VueJS, HTML5 <br> Mobile: ReactNative, Java, Swift |
-| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-virtual) |
+| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-virtual) *This prototype comes with minimal innovation/code for demonstration purposes only* |
 | Cookbook | [Medium Article](https://medium.com/maxonrow/maxathon-challenge-4-virtualizing-the-new-norm-57bb1244e723) |
 
 <br>
@@ -96,7 +96,7 @@
 | Example Solution | - A self-service analytics dashboards that help to uncover hidden insights and help decisions be data driven. <br> - Any idea/problem statement that you can think of !|
 | Preffered Tech Stack | Frontend: React, VueJS, HTML5, CSS <br> Mobile: ReactNative, Java, Swift |
 | Example DataSet | - https://scidm.nchc.org.tw/group/sp-covid-19 <br> - https://github.com/owid/covid-19-data/tree/master/public/data |
-| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-uiux) |
+| Example Prototype | [Github Source Code](https://github.com/maxonrow/challenge-uiux) *This prototype comes with minimal innovation/code for demonstration purposes only* |
 | Cookbook | [Medium Article](https://medium.com/maxonrow/maxathon-challenge-5-ui-ux-a0837a2ffb11) |
 
 <br>

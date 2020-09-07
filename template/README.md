@@ -1,6 +1,6 @@
 # ![https://maxonrow.com](https://raw.githubusercontent.com/maxonrow/docs/master/logo.png)
 
-# **Team Details**
+## **Team Details**
 | Kits | More Info |
 | ------------- | ------------- |
 |Team Name| e.g. MaxonrowChain2020 |
@@ -11,11 +11,11 @@
 
 <br>
 
-# **Project Idea & Explanation**
+## **Project Idea & Explanation**
 - use your own way to ellaborate as much as you can.
 
 
-# **How to run code**
+## **How to run code**
   
 ### Step 1 - Initial
 - Provide steps by steps how to run you code, example as below

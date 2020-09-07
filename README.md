@@ -22,7 +22,7 @@
 - Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 - Your final code need to be supplied together with **Dockerfile** or **Docker Compose** so that judges can run your code for final evaluation easily.
-- You final code need to be supplied together with README.md with instruction following this template.
+- You final code need to be supplied together with **README.md** with instruction following this [template](https://github.com/maxonrow/maxathon/tree/master/template).
 - Maxonrow have all the functions that can help to build the solution for all challenges which participants should fully leverage on, thus, solution should be built by fully utilizing Maxonrow blockchain & be Maxonrow centric. Participants are free to integrate with other blockchain systems for innovation purposes provided Maxonrow blockchain itself is not able to fulfill the needs or criteria. Any innovative idea is welcomed as long as the above mentioned fulfilled.
 
 <br>

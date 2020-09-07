@@ -12,7 +12,7 @@
   3. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*
   4. Team Members FullName : *e.g. 1)Mark Zuckerberg, 2)Elon Musk*
   5. Team Members Github : *e.g. https://github.com/mark, https://github.com/elon-musk*
-- Make sure at least one team member has their GitHub profile provided & linked. (your team repository will then be created for you with full access)
+- Make sure all team members have their GitHub profile provided & linked. (your team repository will then be created for you with full access)
 - Make sure to provide team name. (this name will be used for your github repository, use a different team name if you are participating in multiple challenges)
 
 <br>

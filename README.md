@@ -41,7 +41,7 @@
 <br>
 
 # **Track & Challenges**
-
+There are five tracks in total and participants are allowed to contribute in multiple tracks 
 ## 1# Physical Distancing
 ![Distancing](https://miro.medium.com/max/700/1*Up_Qr6-syTCg0V_N1JSNTQ.jpeg)
 | Item | Description |

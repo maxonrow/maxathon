@@ -5,23 +5,24 @@
 # **Get You Repository**
 
 - Final submissions are made using your team's repository under [here](https://github.com/MaxonrowDev?tab=repositories)
-- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/) and make sure at least one team member has their GitHub profile provided & linked. Your team repository will then be created for you with full access.
-- Please ensure to create your project name (this name will be used for your github repository)
-- Source code submissions need to be made using your team's repository.
-- You can choose to work in a repository elsewhere (e.g. under your own GitHub user) provided you pull the latest version into your team's repository for judging. Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
+- In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/).
 - Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/C019R6D58MD) following the format below
-  1. Team Name : *e.g. Mark Zuckerberg* 
-  2. Challenge : *e.g. Challenge #1 Physical Distancing*
-  2. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*
-  3. Team Members FullName : *e.g. 1)Mark Zuckerberg, 2)Elon Musk* 
-  4. Team Members Github : *e.g. https://github.com/mark, https://github.com/elon-musk*
+  1. Team Name : [ *e.g. MaxonrowChain2020* ] 
+  2. Challenge : [ *e.g. Challenge #1 Physical Distancing* ]
+  3. Project Description : [ *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.* ]
+  4. Team Members FullName : [ *e.g. 1)Mark Zuckerberg, 2)Elon Musk* ]
+  5. Team Members Github : [ *e.g. https://github.com/mark, https://github.com/elon-musk* ]
+- Make sure at least one team member has their GitHub profile provided & linked. (your team repository will then be created for you with full access)
+- Make sure to create provide name. (this name will be used for your github repository)
 
 <br>
 
-# **Rules**
-- You will receive a GitHub repository from the organisation to submit your work. Only submissions in your official repository will be considered.
+# **Requirements**
+- You will receive a GitHub official repository (your team's repository) from the organisation to submit your work. Only submissions in your official repository will be considered.
+- Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
-- Your final code need to be supplied together with **Dockerfile or Docker Compose** so that judges can run your code for final evaluation easily. 
+- Your final code need to be supplied together with **Dockerfile** or **Docker Compose** so that judges can run your code for final evaluation easily.
+- You final code need to be supplied together with README.md with instruction following this template.
 - Maxonrow have all the functions that can help to build the solution for all challenges which participants should fully leverage on, thus, solution should be built by fully utilizing Maxonrow blockchain & be Maxonrow centric. Participants are free to integrate with other blockchain systems for innovation purposes provided Maxonrow blockchain itself is not able to fulfill the needs or criteria. Any innovative idea is welcomed as long as the above mentioned fulfilled.
 
 <br>

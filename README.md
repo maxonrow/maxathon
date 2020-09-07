@@ -7,11 +7,11 @@
 - Final submissions are made using your team's repository under [here](https://github.com/MaxonrowDev?tab=repositories)
 - In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/).
 - Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/C019R6D58MD) following the format below
-  1. Team Name : [ *e.g. MaxonrowChain2020* ] 
-  2. Challenge : [ *e.g. Challenge #1 Physical Distancing* ]
-  3. Project Description : [ *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.* ]
-  4. Team Members FullName : [ *e.g. 1)Mark Zuckerberg, 2)Elon Musk* ]
-  5. Team Members Github : [ *e.g. https://github.com/mark, https://github.com/elon-musk* ]
+  1. Team Name : *e.g. MaxonrowChain2020*
+  2. Challenge : *e.g. Challenge #1 Physical Distancing*
+  3. Project Description : *e.g. Model that monitors and sends out alerts upon identification of lockdown violators.*
+  4. Team Members FullName : *e.g. 1)Mark Zuckerberg, 2)Elon Musk*
+  5. Team Members Github : *e.g. https://github.com/mark, https://github.com/elon-musk*
 - Make sure at least one team member has their GitHub profile provided & linked. (your team repository will then be created for you with full access)
 - Make sure to create provide name. (this name will be used for your github repository)
 

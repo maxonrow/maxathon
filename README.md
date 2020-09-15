@@ -2,7 +2,7 @@
 
 # **MAXathon LaunchPad**
 
-# **Get You Repository**
+# **Get Your Repository**
 
 - Final submissions are made using your team's repository under [here](https://github.com/MaxonrowDev?tab=repositories)
 - In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/).

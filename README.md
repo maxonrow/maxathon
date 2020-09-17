@@ -4,7 +4,7 @@
 
 # **Get Your Repository**
 
-- Final submissions are made using your team's repository under [here](https://github.com/MaxonrowDev?tab=repositories)
+- Final submissions are made using your team's repository under [here](https://github.com/maxathon2020)
 - In order to get a repository, just register your submission on [this platform](https://platform-hackathon.maxonrow.com/).
 - Finally, remember to slack your full details for final confirmation to [admin](https://maxathongroup.slack.com/archives/C019R6D58MD) following the format below
   1. Team Name : *e.g. MaxonrowChain2020* 

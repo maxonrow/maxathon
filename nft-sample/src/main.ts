@@ -74,7 +74,7 @@ const run = async () => {
   const minter = new Minter(symbol, itemId);
   const trxReceipt = await minter.mint(wallet, issuer.address);
 
-  console.log('Step 3 - Transfer in progress .....');
+  console.log('Step 4 - Transfer in progress .....');
   const transferReceipt = await new Transferer(symbol, itemId, issuer)
   .transfer(wallet.address);
   console.log('transferReceipt', '-', transferReceipt);

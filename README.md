@@ -18,7 +18,7 @@
 <br>
 
 # **Requirements**
-- You will receive a GitHub official repository (your team's [repository](https://github.com/MaxonrowDev?tab=repositories)) from the organisation to submit your work. Only submissions in your official repository will be considered.
+- You will receive a GitHub official repository (your team's [repository](https://github.com/maxathon2020)) from the organisation to submit your work. Only submissions in your official repository will be considered.
 - Make sure whatever code you have is committed to your official repository by 11.59pm GMT+8 Wednesday 30-September-2020. You may continue editing until the deadline, as long as some of your code is in by 11.59pm GMT+8.
 - You may use existing code to start with, but you must make clear which new work you have produced in the hackathon. Your submission will be judged only on the new work.
 - Your final code need to be supplied together with **Dockerfile** or **Docker Compose** so that judges can run your code for final evaluation easily.

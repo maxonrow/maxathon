@@ -14,7 +14,11 @@
 
 - clone project `$ git clone -b master https://github.com/maxonrow/maxathon.git` (skip if you have done this before)
 
-### Step 4 - Build & Run
+### Step 4 - Start LocalNet
+
+- Ensure you have [start your LocalNet](https://github.com/maxonrow/maxathon/tree/master/blockchain-starter-kit) before continue to the next
+
+### Step 5 - Build & Run
 
 - go to directory `/maxathon/nft-sample/` you should see `package.json` & `tsconfig.json`
 - execute `npm install`

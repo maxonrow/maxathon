@@ -130,4 +130,4 @@ There are five tracks in total and participants are allowed to contribute in mul
 - Please join the Slack channel as below for questions and discussions.
  [General](https://maxathongroup.slack.com/archives/CSMG32FHU), [Physical Distancing](https://maxathongroup.slack.com/archives/C01A7K1J95W), [Welfare](https://maxathongroup.slack.com/archives/C01A7K34QC8), [Virtual the New Norm](https://maxathongroup.slack.com/archives/C01A7L28RJL), [UIUX](https://maxathongroup.slack.com/archives/C01936P5T9V), [TeamFinding](https://maxathongroup.slack.com/archives/C019G40UBK9)
 - Use hashtags in the chat to easily share resources or ask for help about different technologies or platforms. eg. #blockchain, #kyc, #nft 
-- All date/time mentioned above following timezone GMT+8
+- All date/time mentioned above following timezone UTC+2
